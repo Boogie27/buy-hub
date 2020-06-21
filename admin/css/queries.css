@@ -1,0 +1,241 @@
+/* ------------------------------------------- */
+/*           RESPONSIVENESS                    */
+/* ------------------------------------------ */
+
+/* responsiveness from 992px to 1125px */
+@media only screen and (max-width: 1125px){
+ /* side nav */
+ .side-nav-header{
+    display: block;
+}
+.side-navigation ul.sizeBar-nav{
+    padding-top: 5px;
+    margin-left: 0px;
+}
+/* order activity */
+.order-activity-drop-down ul{
+    width: 25%;
+}
+    
+
+/* end */
+} 
+
+/* responsiveness from 871px to 992px */
+@media only screen and (max-width: 991px){
+    /* side navigation */
+    .navi{
+        border-right: 1px solid rgb(98, 97, 97);
+        position: absolute;
+        z-index: 100;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: -350px;
+        display: block;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        padding: 0px;
+    }
+    .profile{
+        padding-right: 20px;
+    }
+    .side-nav-content ul li:hover{
+        background-color: transparent;
+     }
+    .profileImage span{
+        display: none;
+    }
+    .side-navigation{
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    #sideNavOpenButton{
+        display: block;
+    }
+    .sizeBar-nav i{
+        display:  block;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+    }
+    /* ===================================== */
+    /*               bar chart               */
+    /* ====================================== */
+    .bar-chart ul.stats li{
+        width: 200px;
+     }
+    .bar-chart{
+        margin-bottom: 50px;
+    }
+    /* order Activity */
+    #order-activity-image{
+        display: none;
+    }
+    .order-activity-drop-down i.fa-ellipsis-v{
+        color: rgb(108, 107, 107);
+        top: 0px;
+    }
+
+    /* ====================================== */
+    /*          SOLD PRODUCTS                */
+    /* ====================================== */
+    .table-responsive{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    /* end */
+}
+
+
+/* responsiveness from 776px to 870px */
+@media only screen and (max-width: 870px){
+   
+
+    /* end */
+    } 
+    
+/* responsiveness from 577px to 767px */
+@media only screen and (max-width: 767px){
+    /* navigation */
+    .navigation{
+        margin-bottom: 20px;
+    }
+    .navigation .profileImage img{ 
+        width: 40px;
+        height: 40px;
+     }
+     .nav-container form input{
+        background-color: #333;
+        border: none;
+        border: 1px solid rgb(75, 75, 75);
+        font-size: 85%;
+    }
+     .mobile-nav-content{
+        display: block;
+    }
+    .desktop-nav-content{
+        display: none;
+    }
+     .profile{
+         margin: 2px 0px 10px 0px;
+     }
+     .profileImage .fa-circle{
+        font-size: 40%;
+        left: 25px;
+        bottom: 0px;
+        padding: 0px;
+    }
+    .nav-container input{
+        width: 80%;
+        margin-left: 10%;
+    }
+  /*  main content  */
+  .main-content{
+    padding: 20px 0px;
+}
+.main-content-home-logo i{
+    margin-left: 15px;
+}
+.main-content-thumb{
+    padding: 5px 10px;
+}
+/* order activity */
+.order-activity-drop-down ul{
+    width: 30%;
+}
+/* product page */
+.table-option{
+    max-width: 30%;
+}
+ 
+
+
+    /* end */
+}
+
+/* responsiveness from 486px to 575px */
+@media only screen and (max-width: 575px){
+ /* main content */
+ .main-content-section, .removePadding{
+    padding: 0px;
+}
+ .main-content-thumb{
+    padding: 25px 30px;
+}
+.main-content-thumb ul li.thumb-header i{
+    font-size: 175%;
+}
+/* order activity */
+.order-activity-drop-down ul{
+    width: 35%;
+}
+
+
+    /* end */
+    } 
+    
+/* responsiveness from 399px to 485px */
+@media only screen and (max-width: 485px){
+   /* main content */
+   .profileImage span{
+       display: none;
+   }
+/* bar chart */
+.bars li span{
+    font-size: 50%;
+}
+.bars .bar::before{
+    font-size: 50%;
+}
+.bar-chart{
+   padding: 5px;
+   height: 380px;
+}
+/* order activity */
+.order-activity-drop-down ul{
+    width: 45%;
+}
+/* product */
+.products-items-header ul li.addNewProduct{
+    font-size: 65%;
+    padding: 3px 10px;
+    top: 7px;
+}
+
+
+    /* end */
+}
+
+
+/* responsiveness from 319px to 398px */
+@media only screen and (max-width: 398px){
+    /* top navigation */
+    .ul-nav li{
+        margin-left: 20px;
+    }
+  /* side nav */
+  section .navi#sideNavigation{
+      max-width: 80%;
+  }
+  /* order activity */
+.order-activity-drop-down ul{
+    width: 70%;
+}  
+
+
+
+    /* end */
+    } 
+    
+/* responsiveness from 0px to 320px */
+@media only screen and (max-width: 320px){
+/* product */
+.products-items-header ul li.addNewProduct{
+    top: -100px;
+    right: -20px;
+}
+
+    /* end */
+}

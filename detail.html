@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>detail page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/queries.css">
+        <link rel="stylesheet" href="font-awesome/all.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+
+        <!-- side bar navigation for mobile devices -->
+        <section class="profile-section">
+            <div class="profile">
+                    <i class="fas fa-times" id="sideBarClose"></i>
+                    <div class="profile-head">
+                        <div class="profile-img">
+                            <img src="images/profile-image.png" alt="profile-img">
+                             <i class="fas fa-pen"></i>
+                       </div>
+                         <ul>
+                             <li class="username">User Name</li>
+                             <li class="email">example.gmail.com</li>
+                         </ul>
+                    </div>
+                    <div class="profile-link">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="#">New Products</a></li>
+                            <li class="category">Category <i class="fas fa-angle-right"></i></li>
+                            <li class="details">Details <i class="fas fa-angle-right"></i></li>
+                            <li class="account-info">Account Info</li>
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="order.html">My Order</a></li>
+                            <li><a href="cart.html">My Cart</a></li>
+                            <li><a href="billing.html">Billing Address</a></li>
+                            <li><a href="shipping.html">Shipping Address</a></li>
+                            <li><a class="form-action-button" data-type="changePassword-form">Change Password</a></li>
+                            <li><a href="#">Account Privacy</a></li>
+                            <li><a href="#">Check Out</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a class="form-action-button" data-type="login-form">Login</a></li>
+                            <li><a class="form-action-button" data-type="signup-form">Sign Up</a></li>
+                        </ul>
+                    </div>
+               </div>
+
+               <!-- category sub menu -->
+               <div class="category-Items catActive pageClose">
+                   <div class="category-header">
+                            <i class="fas fa-arrow-left"></i>
+                            <h2>Category</h2>
+                    </div>
+                    <ul class="sideLink">
+                        <li class="link">Playstation 
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Console</a></li>
+                                    <li><a href="#">Pads</a></li>
+                                    <li><a href="#">Cables</a></li>
+                                    <li> <a href="#">Game disc</a></li>
+                                </ul>  
+                        </div>
+                        </li>
+                        <li class="link">Women Wears </li>
+                        <li class="link">Playstaion </li>
+                        <li class="link">Electronics </li>
+                        <li class="link">Children </li>
+                        <li class="link">Babies </li>
+                        <li class="link">Accessories </li>
+                        <li class="link">Men Wears
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="index.html">Neckless</a></li>
+                                    <li><a href="#">Rings</a></li>
+                                    <li> <a href="#">Bangle</a></li>
+                                </ul>  
+                            </div>
+                        </li>
+                        </ul>
+                </div>
+                <!-- end -->
+                        <!-- details for mobile side bar-->
+                        <div class="mobile-right-bar pageClose">
+                            <div class="detal-header">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <h2>Details</h2>
+                            </div>
+                            <div class="details-items">
+                                    <div class="col-sm-12 myCart">
+                                            <div class="myCart-header display-detail-cart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span>my cart (4)</span>
+                                                <i class="fas sign fa-angle-down"></i>
+                                            </div>
+                                            <ul class="cartImages" id="display-detail-cart-open">
+                                                <li><a href="#"><img src="images/shirt_3.jpg" alt="shirt_3">T-shirt (1)</a></li>
+                                                <li><a href="#"><img src="images/watch_1.png" alt="watch_1">metro watch (1)</a></li>
+                                                <li><a href="#"><img src="images/blue_shoe.jpg" alt="blue_shoe">T-shirt (1)</a></li>
+                                                <li><a href="#"><img src="images/watch_1.png" alt="watch_1">metro watch (1)</a></li>
+                                            </ul>
+                                            <div class="amount">₦ 120,000</div>
+                                    </div>
+                                    <div class="col-sm-12 freeShop">
+                                        <div class="free-header">
+                                            <i class="fas fa-truck"></i>
+                                            <span>free shipping</span>
+                                        </div>
+                                        <a href="#">free on all products</a>
+                                    </div>
+                                    <div class="col-sm-12 order-online">
+                                        <div class="order-header">
+                                            <i class="fas fa-laptop"></i>
+                                            <span>Order Online</span>
+                                        </div>
+                                        <a href="#">order online</a>
+                                    </div>
+                                    <div class="col-sm-12 money-back">
+                                        <div class="moneyBack-header">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            <span>money back</span>
+                                        </div>
+                                        <a href="#">money back</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+    </section>
+   <!-- end  -->
+
+
+   
+
+
+
+     
+       <!-- SIGNUP SECTION -->
+       <section class="activeSkin-container">
+            <!-- signup form -->
+                <div class="signup-section">
+                      <div class="form-container">
+                          <div class="signup-header">
+                              <h2>Create account</h2>
+                              <i class="fas fa-times" id="closeSignup"></i>
+                          </div>
+                          <form action="">
+                              <div class="form-group">
+                                  <label for="name">Name <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Email <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="email" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="passowrd">Password <b class="text-danger">*</b> </label>
+                                  <input type="password" class="form-control" name="passowrd" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="confirm-password">Confirm Password <b class="text-danger">*</b> </label>
+                                  <input type="password" class="form-control" name="confirm-passowrd" required>
+                              </div>
+                              <div class="form-group">
+                                  <button type="submit" class="form-control btn">Create Account</button>
+                              </div>
+                              <div class="form-group social-container">
+                                  <label for="">Or Login with</label>
+                                  <a href="#" class="social-icons"><img src="images/icons/facebook.png" alt="facebook">Facebook</a>
+                                  <a href="#" class="social-icons"><img src="images/icons/google.png" alt="google">Google</a>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+  
+                  <!-- login form -->
+                  <div class="login-section">
+                          <div class="form-container">
+                              <div class="login-header">
+                                  <h2>Login</h2>
+                                  <i class="fas fa-times" id="closeLogin"></i>
+                              </div>
+                              <form action="">
+                                  <div class="form-group">
+                                      <label for="email">Email <b class="text-danger">*</b> </label>
+                                      <input type="text" class="form-control" name="email" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="passowrd">Password <b class="text-danger">*</b> </label>
+                                      <input type="password" class="form-control" name="passowrd" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <button type="submit" class="form-control btn">Login</button>
+                                  </div>
+                                  <div class="form-group social-container">
+                                      <label for="">Or Login with</label>
+                                      <a href="#" class="social-icons"><img src="images/icons/facebook.png" alt="facebook">Facebook</a>
+                                      <a href="#" class="social-icons"><img src="images/icons/google.png" alt="google">Google</a>
+                                  </div>
+                              </form>
+                          </div>
+                  </div>
+
+                  
+                   <!-- change password form -->
+                   <div class="change-password-section">
+                        <div class="form-container">
+                            <div class="login-header">
+                                <h2>Change Password</h2>
+                                <i class="fas fa-times" id="closeChangePassword"></i>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="old-password">Old Password <b class="text-danger">*</b> </label>
+                                    <input type="password" class="form-control" name="old-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-password">New Password <b class="text-danger">*</b> </label>
+                                    <input type="password" class="form-control" name="new-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Confirm Password <b class="text-danger">*</b> </label>
+                                    <input type="password" class="form-control" name="confirm-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control btn">Change Password</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+          </section>
+     
+ 
+
+
+
+
+
+    <!-- NAVIGATION -->
+       <section>
+           <div class="navigation">
+                <div class="top-navigation">
+                        <div class="container">
+                               <div class="mysection">
+                                   <div class="logo">
+                                       <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                                   </div>
+
+                                   <h2>shop hub</h2>
+                                   <span>
+                                        <a href="cart.html">
+                                            <i class="fas fa-shopping-cart">
+                                                <h6 class="badge btn btn-danger">3</h6>
+                                            </i>
+                                        </a>
+                                        <i class="fas fa-bars" id="sidebarOpen"></i>
+                                    </span>
+                                </div>
+                               <div class="top-link">
+                                    <a href="account.html">My account</a>
+                                    <a href="order.html">My order</a>
+                                    <a href="cart.html">My cart</a>
+                                    <a href="#">checkout</a>
+                                    <a class="form-action-button" data-type="login-form">login</a>
+                                          <a class="form-action-button" data-type="signup-form">signup</a>
+                               </div>
+                        </div>
+                </div>
+                   <!-- SEARCH SECTION -->
+                   <div class="search-section">
+                           <div class="container search">
+                               <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                               <form action="">
+                                       <div class="search-box">
+                                            <input type="text" name="search" value="" class="search-input" placeholder="Enter product">
+                                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                                      </div>
+                               </form>
+                              
+                           </div>
+                   </div>
+
+                   <div class="navigation-links">
+                        <div class="container-link">
+                                <div class="link">
+                                        <a href="index.html" class="">Home</a>
+                                        <a href="product.html">Products</a>
+                                        <a href="#">New products</a>
+                                        <a href="#">Contact us</a>
+                                        <a class="form-action-button" data-type="login-form">Login</a>
+                                        <a class="form-action-button" data-type="signup-form">signup</a>
+                                    </div>
+                                    <div class="phone"><a><i class="fas fa-phone"></i>Call us +2348012345678 </a></div>
+                        </div>
+                   </div>
+           </div>
+       </section>
+
+
+       <!-- DETAIL SECTION -->
+<section class="detail-body">
+       <div class="container">
+        <div class="inner-detail-body">
+                <div class="detail-container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                             <div class="detail-header">
+                                 <h1>nigerian men's</h1>
+                                 <ul>
+                                     <li class="item-name">native</li>
+                                     <li><i class="fas fa-star star-detail"></i><i class="fas fa-star star-detail"></i><i class="fas fa-star star-detail"></i><i class="fas fa-star star-detail"></i><i class="fas fa-star star-detail"></i> <span>69 Ratings</span></li>
+                                 </ul>
+                             </div>
+                             <div class="detail-images">
+                                   <div class="detail-slide-frame swiper-container">
+                                         <div class="main-detail-image swiper-track">
+                                             <!-- <div class="detailImages">
+                                                 <img src="images/image-detail-1.jpg" alt="image-detail-1">
+                                             </div>
+                                             <div class="detailImages">
+                                                 <img src="images/detail-image-6-back.jpg" alt="detail-image-6-back">
+                                             </div> -->
+                                          </div>
+                                   </div>
+                                 <div class="detail-sub-image">
+                                            <div class="subImage-container swiper-container">
+                                                <div class="subImage-frame swiper-track">
+                                                    <!-- <div class="sub-image active-image">
+                                                        <img src="images/image-detail-1.jpg" alt="image-detail-1">
+                                                    </div>
+                                                
+                                                    <div class="sub-image">
+                                                        <img src="images/image-detail-2.jpg" alt="image-detail-2">
+                                                    </div>
+                                            
+                                                    <div class="sub-image">
+                                                        <img src="images/image-detail-3.jpg" alt="image-detail-3">
+                                                    </div>
+                                            
+                                                    <div class="sub-image">
+                                                        <img src="images/image-detail-6.jpg" alt="image-detail-6">
+                                                    </div>
+                                            
+                                                    <div class="sub-image">
+                                                        <img src="images/image-detail-5.jpg" alt="image-detail-5">
+                                                    </div> -->
+                                            </div>
+                                            <div class="angle swipper-direction">
+                                                <i class="fas fa-angle-left"></i>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                         </div>
+                                 </div>
+                                 <div class="direction swipper-direction">
+                                     <i class="fas fa-angle-left"></i>
+                                     <i class="fas fa-angle-right"></i>
+                                 </div>
+                                 <div class="carousel">
+                                     <!-- <span class="active-detail-image"></span> -->
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                               <div class="detail-side-bar">
+                                     <div class="detail-price">
+                                         <h2>₦20,000</h2>
+                                         <ul>
+                                              <li><b>Color:</b> <span>black Native</span></li>
+                                         </ul>
+                                     </div>
+                                      <div class="detail-thumb-container">
+                                             <div class="row">
+                                                 <!-- <div class="col-lg-4 detail-thumb">
+                                                         <div class="detail-thumb-image">
+                                                             <img src="images/image-detail-1.jpg" alt="detail-image-1">
+                                                         </div>
+                                                 </div>
+                                                 <div class="col-lg-4 detail-thumb">
+                                                         <div class="detail-thumb-image">
+                                                             <img src="images/detail-image-6-back.jpg" alt="detail-image-1">
+                                                         </div>
+                                                 </div> -->
+                                             </div>
+                                      </div>
+                                      <div class="quantity">
+                                          <ul>
+                                              <li><b>Quantity: </b>(1)</li>
+                                          </ul>
+                                      </div>
+                                     <div class="size">
+                                         <div class="size-header"><h2>Size (UK)</h2></div>
+                                        <form action="">
+                                             <select name="size" id="size" class="form-control">
+                                                 <option value="">Selector size</option>
+                                                 <option value="">40</option>
+                                                 <option value="">41</option>
+                                                 <option value="">42</option>
+                                                 <option value="">43</option>
+                                                 <option value="">44</option>
+                                                 <option value="">45</option>
+                                             </select>
+                                             <p>Please Note that this style is shipped at EU size</p>
+                                             <div class="form-group">
+                                                 <label for="quantity">Quantity: </label>
+                                                 <input type="number" class="form-control qty" min="0" value="">
+                                             </div>
+                                             <p>Delivery: 3-5 working days </p>
+                                             <p>Shipping fee: ₦1300</p>
+                                             <input type="submit" class="form-control submit-item" value="Add To Cart">
+                                             <input type="submit" class="form-control save-to-cart" value="Save For Later">
+                                        </form>
+                                     </div> 
+                               </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                 <!--  PRODUCT DETAILS -->
+                <div class="product-details">
+                          <div class="row">
+                                <div class="col-lg-8 col-md-8">
+                                     <div class="product-detail-header">
+                                         <h2>Product Detail</h2>
+                                     </div>
+                                     <div class="product-detail-body">
+                                         <h2>Description:</h2>
+                                         <p>Mens africanclothing tribal dashiki traditional maxi stand collar long sleeves dress shirt plus size.</p>
+                                         <h2>feautures:</h2>
+                                         <p>African style, Long Sleeves, Tribal Print, Stand Collar, Slim fit, Lightweight, Dress pullover tops.</p>
+                                         <h2>Notice:</h2>
+                                         <p>If you have any question, please do not hesitate to contact us, we solve your problem as soon as possible until your are satisfied.</p>
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <!-- FREQUENT BOUGHT SECTION  -->
+                                    <div class="frequently-bought">
+                                        <h2>Frequent bought together</h2>
+                                        <div class="frequently-bought-body sliderFrame">
+                                            <div class="frequently-bought-item slider">
+                                                    <div class="ratings">
+                                                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                                            <span>85%</span>
+                                                    </div>
+                                                    <img src="images/image-detail-3.jpg" alt="image-detail-3">
+                                                    <h3>luxfan</h3>
+                                                    <ul>
+                                                        <li>Mens Danshiki African Tribal Clothing Printed Long Henley Shirt Traditional Ethinic Slim Fit Outfit Plus Size.</li>
+                                                        <li class="text-danger"> ₦13,000</li>
+                                                    </ul>
+                                            </div>
+                                             <div class="frequently-bought-item slider">
+                                                    <div class="ratings">
+                                                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                                            <span>85%</span>
+                                                    </div>
+                                                    <img src="images/image-detail-4.jpg" alt="image-detail-3">
+                                                    <h3>luxfan</h3>
+                                                    <ul>
+                                                        <li>Mens Danshiki African Tribal Clothing Printed Long Henley Shirt Traditional Ethinic Slim Fit Outfit Plus Size.</li>
+                                                        <li class="text-danger"> ₦20,000</li>
+                                                    </ul>
+                                            </div>
+                                            <div class="frequently-bought-item slider">
+                                                <div class="ratings">
+                                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                                        <span>85%</span>
+                                                </div>
+                                                <img src="images/image-detail-5.jpg" alt="image-detail-5">
+                                                <h3>luxfan</h3>
+                                                <ul>
+                                                    <li>Mens Danshiki African Tribal Clothing Printed Long Henley Shirt Traditional Ethinic Slim Fit Outfit Plus Size.</li>
+                                                    <li class="text-danger"> ₦20,000</li>
+                                                </ul>
+                                            </div>
+                                            <div class="direction action">
+                                                <i class="fas fa-angle-left"></i>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                </div>
+          </div>
+        </div>
+</section>
+  
+
+
+        <!-- CUSTOMER VIEWS -->
+        <section>
+            <div class="customer-view">
+                  <div class="customer-view-header">
+                      <h2>Customers who viewed this items also viewed</h2>
+                      <div class="customer-viewed-body swiper-container">
+                          <div class="viewed-container swiper-track">
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-3.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-6.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-1.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-2.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                            <img src="images/image-detail-3.jpg" alt="">
+                                            <ul>
+                                                <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                                <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                                <li class="text-danger price"> ₦20,000</li>
+                                            </ul>
+                                        </div>
+                                        <div class="viewed-items">
+                                            <img src="images/image-detail-2.jpg" alt="">
+                                            <ul>
+                                                <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                                <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                                <li class="text-danger price"> ₦20,000</li>
+                                            </ul>
+                                        </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-4.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-5.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-1.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                                    <div class="viewed-items">
+                                        <img src="images/image-detail-2.jpg" alt="">
+                                        <ul>
+                                            <li>Clouds style men dashiki button down slim fit african men printed long sleeve mens shirt.</li>
+                                            <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                            <li class="text-danger price"> ₦20,000</li>
+                                        </ul>
+                                    </div>
+                          </div>
+                          <div class="view direction swipper-direction">
+                              <i class="fas fa-angle-left"></i>
+                              <i class="fas fa-angle-right"></i>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+    
+
+
+    <!-- QUESTION SECTION -->
+    <section class="question-container">
+             <div class="container">
+                <div class="question">
+                    <div class="question-header">
+                        <h2>Customers Question & answers</h2>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" placeholder="Have a question?">
+                            <button  type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                    <div class="customers">
+                        <div class="customer-images">
+                            <img src="images/profile-image.png" alt="profile-image">
+                            <h3>Morgan Morer</h3>
+                            <h4>february 17, 2020</h4>
+                        </div>
+                        <div class="customers-question">
+                              <ul>
+                                  <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                  <li class="custommers-text">this is a very nice peice of traditional wear i love it so much and it fits just perfectly. it 
+                                      is cheap and smooth , i got a lot of compliment at the party..
+                                  </li>
+                                  <li class="delete"><a href="#">Delete</a></li>
+                                  <li class="comment"><a href="#">Comment</a></li>
+                                  <li class="report"><a href="#">Report Abuse</a></li>
+                              </ul>
+                        </div>
+                   </div>
+
+                   <div class="customers">
+                    <div class="customer-images">
+                        <img src="images/profile-image.png" alt="profile-image">
+                        <h3>Freeman chikason</h3>
+                        <h4>february 17, 2020</h4>
+                    </div>
+                    <div class="customers-question">
+                          <ul>
+                                <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                <li class="custommers-text">this is a very nice peice of traditional wear i love it so much and it fits just perfectly. it 
+                                    is cheap and smooth , i got a lot of compliment at the party..
+                                </li>
+                                    <li class="delete"><a href="#">Delete</a></li>
+                                    <li class="comment"><a href="#">Comment</a></li>
+                                    <li class="report"><a href="#">Report Abuse</a></li>
+                                </ul>
+                            </div>
+                     </div>
+
+                <div class="customers">
+                        <div class="customer-images">
+                            <img src="images/profile-image.png" alt="profile-image">
+                            <h3>Sharon Welfred</h3>
+                            <h4>february 17, 2020</h4>
+                        </div>
+                        <div class="customers-question">
+                            <ul>
+                                <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                <li class="custommers-text">this is a very nice peice of traditional wear i love it so much and it fits just perfectly. it 
+                                    is cheap and smooth , i got a lot of compliment at the party..
+                                </li>
+                                <li class="delete"><a href="#">Delete</a></li>
+                                <li class="comment"><a href="#">Comment</a></li>
+                                <li class="report"><a href="#">Report Abuse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+    </section>
+       
+
+
+
+
+     <!-- ADVERT SECTION -->
+    <section class="advertisement">
+              <div class="container">
+                     <div class="advert-header">
+                            <h2>Customers who bought this item also bought</h2>
+                     </div>
+                     <div class="advert-body">
+                         <div class="row">
+                              <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                  <div class="advert">
+                                      <img src="images/female-native-3.jpg" alt="female-native-3">
+                                      <ul>
+                                          <li>Native female dashiki <span> ( female african wear ) </span></li>
+                                          <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                    <div class="advert">
+                                        <img src="images/female-native-2.jpg" alt="female-native-2">
+                                        <ul>
+                                            <li>Native female dashiki <span> ( female african wear ) </span></li>
+                                            <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                  <div class="advert">
+                                      <img src="images/laptop.jpg" alt="image-detail-4">
+                                      <ul>
+                                        <li>Native male dashiki long sleeve<span> ( male african wear ) </span></li>
+                                        <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                    </ul>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                    <div class="advert">
+                                        <img src="images/female-native-4.jpg" alt="female-native-4">
+                                        <ul>
+                                            <li>Native female dashiki <span> ( female african wear ) </span></li>
+                                            <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                    <div class="advert">
+                                        <img src="images/female-native-1.jpg" alt="female-native-1">
+                                        <ul>
+                                            <li>Native female dashiki <span> ( female african wear ) </span></li>
+                                            <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                                    <div class="advert">
+                                        <img src="images/image-detail-3.jpg" alt="image-detail-3">
+                                        <ul>
+                                            <li>Native male dashiki long sleeve<span> ( male african wear ) </span></li>
+                                            <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                         </div>
+                     </div>
+              </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER SECTION -->
+<section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div class="news-letter">
+                           <h2>news letter</h2>
+                           <p>subscribe to get the latest on sales, new release and more...</p>
+                           <form action="" method="post">
+                               <div class="form-group">
+                                   <input type="email" name="letter" class="form-control" value="" placeholder="Enter mail">
+                                   <button type="submit" name="subscribe">subscribe</button>
+                               </div>
+                           </form>
+                          <ul>
+                                  <li class="li">supported payment system</li>
+                                  <li><img src="images/american-express.png" alt="american-express"></li>
+                                  <li><img src="images/master-card.png" alt="master-card"></li>
+                                  <li><img src="images/visa-card.png" alt="visa-card"></li>
+                                  <li><img src="images/paypal-card.jpg" alt="paypal-card"></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-6">
+                    <div class="info">
+                            <h2>account info</h2>
+                            <ul>
+                                <li class="signup-button"><a>Login/Register</a></li>
+                                <li><a href="order.html">My Order</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-6">
+                      <div class="info">
+                              <h2>shipping info</h2>
+                              <ul>
+                                  <li><a href="#">Secure Shipping</a></li>
+                                  <li><a href="#">Privacy Policy</a></li>
+                                  <li><a href="#">Our Policy</a></li>
+                              </ul>
+                      </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-6">
+                      <div class="info">
+                              <h2>quick links</h2>
+                              <ul>
+                                  <li><a href="#">About Us</a></li>
+                                  <li><a href="#">Blog</a></li>
+                                  <li><a href="#">Testimonial</a></li>
+                                  <li><a href="#">Contact Us</a></li>
+                                  <li><a href="#"><i class="fas fa-phone"></i> +2348012345678</a></li>
+                              </ul>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                      <div class="info-media">
+                              <h2>quick links</h2>
+                              <ul>
+                                  <li><img src="images/instagram.jpg" alt="instagram"></li>
+                                  <li><img src="images/facebook.jpg" alt="facebook"></li>
+                                  <li><img src="images/skipe.jpg" alt="skipe"></li>
+                                  <li><img src="images/linkedin.jpg" alt="linkedin"></li>
+                                  <li><img src="images/twitter.jpg" alt="twitter"></li>
+                              </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">copyright ©2020 all rights reserved boogie</div>
+  </section>
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

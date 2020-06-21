@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>account page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/queries.css">
+        <link rel="stylesheet" href="font-awesome/all.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+    </head>
+<body>
+    <body style="position: static; width: 100%;">
+
+        <!-- side bar navigation for mobile devices -->
+          <section class="profile-section">
+                  <div class="profile">
+                          <i class="fas fa-times" id="sideBarClose"></i>
+                          <div class="profile-head">
+                               <div class="profile-img">
+                                  <img src="images/profile-image.png" alt="profile-img">
+                                   <i class="fas fa-pen"></i>
+                                </div>
+                               <ul>
+                                   <li class="username">User Name</li>
+                                   <li class="email">example.gmail.com</li>
+                               </ul>
+                          </div>
+                          <div class="profile-link">
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="product.html">Products</a></li>
+                                  <li><a href="#">New Products</a></li>
+                                  <li class="category">Category <i class="fas fa-angle-right"></i></li>
+                                  <li class="details">Details <i class="fas fa-angle-right"></i></li>
+                                  <li class="account-info">Account Info</li>
+                                  <li><a href="account.html">My Account</a></li>
+                                  <li><a href="order.html">My Order</a></li>
+                                  <li><a href="cart.html">My Cart</a></li>
+                                  <li><a href="billing.html">Billing Address</a></li>
+                                  <li><a class="form-action-button" data-type="changePassword-form">Change Password</a></li>
+                                  <li><a href="#">Account Privacy</a></li>
+                                  <li><a href="#">Check Out</a></li>
+                                  <li><a href="#">About Us</a></li>
+                                  <li><a href="#">Contact</a></li>
+                                  <li><a class="form-action-button" data-type="login-form">Login</a></li>
+                                  <li><a class="form-action-button" data-type="signup-form">Sign Up</a></li>
+                              </ul>
+                          </div>
+                     </div>
+      
+                     <!-- category sub menu -->
+                     <div class="category-Items catActive pageClose">
+                         <div class="category-header">
+                                  <i class="fas fa-arrow-left"></i>
+                                  <h2>Category</h2>
+                          </div>
+                          <ul class="sideLink">
+                              <li class="link">Playstation 
+                                  <div class="dropdown">
+                                      <ul>
+                                          <li><a href="#">Console</a></li>
+                                          <li><a href="#">Pads</a></li>
+                                          <li><a href="#">Cables</a></li>
+                                          <li> <a href="#">Game disc</a></li>
+                                      </ul>  
+                              </div>
+                              </li>
+                              <li class="link">Women Wears </li>
+                              <li class="link">Playstaion </li>
+                              <li class="link">Electronics </li>
+                              <li class="link">Children </li>
+                              <li class="link">Babies </li>
+                              <li class="link">Accessories </li>
+                              <li class="link">Men Wears
+                                  <div class="dropdown">
+                                      <ul>
+                                          <li><a href="#">Watch</a></li>
+                                          <li><a href="index.html">Neckless</a></li>
+                                          <li><a href="#">Rings</a></li>
+                                          <li> <a href="#">Bangle</a></li>
+                                      </ul>  
+                                  </div>
+                              </li>
+                              </ul>
+                      </div>
+                      <!-- end -->
+      
+                       <!-- details for mobile side bar-->
+                  <div class="mobile-right-bar pageClose">
+                          <div class="detal-header">
+                                  <i class="fas fa-arrow-left"></i>
+                                  <h2>Details</h2>
+                          </div>
+                          <div class="details-items">
+                                  <div class="col-sm-12 myCart">
+                                          <div class="myCart-header display-detail-cart">
+                                              <i class="fas fa-shopping-cart"></i>
+                                              <span>my cart (4)</span>
+                                              <i class="fas sign fa-angle-down"></i>
+                                          </div>
+                                          <ul class="cartImages" id="display-detail-cart-open">
+                                              <li><a href="#"><img src="images/shirt_3.jpg" alt="shirt_3">T-shirt (1)</a></li>
+                                              <li><a href="#"><img src="images/watch_1.png" alt="watch_1">metro watch (1)</a></li>
+                                              <li><a href="#"><img src="images/blue_shoe.jpg" alt="blue_shoe">T-shirt (1)</a></li>
+                                              <li><a href="#"><img src="images/watch_1.png" alt="watch_1">metro watch (1)</a></li>
+                                          </ul>
+                                          <div class="amount">₦ 120,000</div>
+                                  </div>
+                                  <div class="col-sm-12 freeShop">
+                                      <div class="free-header">
+                                          <i class="fas fa-truck"></i>
+                                          <span>free shipping</span>
+                                      </div>
+                                      <a href="#">free on all products</a>
+                                  </div>
+                                  <div class="col-sm-12 order-online">
+                                      <div class="order-header">
+                                          <i class="fas fa-laptop"></i>
+                                          <span>Order Online</span>
+                                      </div>
+                                      <a href="#">order online</a>
+                                  </div>
+                                  <div class="col-sm-12 money-back">
+                                      <div class="moneyBack-header">
+                                          <i class="fas fa-money-bill-wave"></i>
+                                          <span>money back</span>
+                                      </div>
+                                      <a href="#">money back</a>
+                                  </div>
+                          </div>
+                      </div>
+                      <!-- end -->
+          </section>
+         <!-- end  -->
+      
+      
+         
+      
+                 
+       <!-- SIGNUP SECTION -->
+      <section class="activeSkin-container">
+            <!-- signup form -->
+                <div class="signup-section">
+                      <div class="form-container">
+                          <div class="signup-header">
+                              <h2>Create account</h2>
+                              <i class="fas fa-times" id="closeSignup"></i>
+                          </div>
+                          <form action="">
+                              <div class="form-group">
+                                  <label for="name">Name <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Email <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="email" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="passowrd">Password <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="passowrd" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="confirm-password">Confirm Password <b class="text-danger">*</b> </label>
+                                  <input type="text" class="form-control" name="confirm-passowrd" required>
+                              </div>
+                              <div class="form-group">
+                                  <button type="submit" class="form-control btn">Create Account</button>
+                              </div>
+                              <div class="form-group social-container">
+                                  <label for="">Or Login with</label>
+                                  <a href="#" class="social-icons"><img src="images/icons/facebook.png" alt="facebook">Facebook</a>
+                                  <a href="#" class="social-icons"><img src="images/icons/google.png" alt="google">Google</a>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+  
+                  <!-- login form -->
+                  <div class="login-section">
+                          <div class="form-container">
+                              <div class="login-header">
+                                  <h2>Login</h2>
+                                  <i class="fas fa-times" id="closeLogin"></i>
+                              </div>
+                              <form action="">
+                                  <div class="form-group">
+                                      <label for="email">Email <b class="text-danger">*</b> </label>
+                                      <input type="text" class="form-control" name="email" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="passowrd">Password <b class="text-danger">*</b> </label>
+                                      <input type="text" class="form-control" name="passowrd" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <button type="submit" class="form-control btn">Login</button>
+                                  </div>
+                                  <div class="form-group social-container">
+                                      <label for="">Or Login with</label>
+                                      <a href="#" class="social-icons"><img src="images/icons/facebook.png" alt="facebook">Facebook</a>
+                                      <a href="#" class="social-icons"><img src="images/icons/google.png" alt="google">Google</a>
+                                  </div>
+                              </form>
+                          </div>
+                  </div>
+
+                  
+                   <!-- change passowrd form -->
+                   <div class="change-password-section">
+                        <div class="form-container">
+                            <div class="login-header">
+                                <h2>Change Password</h2>
+                                <i class="fas fa-times" id="closeChangePassword"></i>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="old-password">Old Password <b class="text-danger">*</b> </label>
+                                    <input type="text" class="form-control" name="old-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-password">New Password <b class="text-danger">*</b> </label>
+                                    <input type="text" class="form-control" name="new-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm-password">Confirm Password <b class="text-danger">*</b> </label>
+                                    <input type="text" class="form-control" name="confirm-passowrd" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control btn">Change Password</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+          </section>
+     
+      
+      
+      
+      
+      
+          <!-- NAVIGATION -->
+             <section>
+                 <div class="navigation">
+                      <div class="top-navigation">
+                              <div class="container">
+                                     <div class="mysection">
+                                         <div class="logo">
+                                             <a href="#"><img src="images/logo.png" alt="logo"></a>
+                                         </div>
+                                         <h2>shop hub</h2>
+                                         <span>
+                                            <a href="cart.html">
+                                                <i class="fas fa-shopping-cart">
+                                                    <h6 class="badge btn btn-danger">3</h6>
+                                                </i>
+                                            </a>
+                                            <i class="fas fa-bars" id="sidebarOpen"></i>
+                                        </span>
+                                      </div>
+                                     <div class="top-link">
+                                          <a href="account.html" class="active">My account</a>
+                                          <a href="order.html">My order</a>
+                                          <a href="cart.html">My cart</a>
+                                          <a href="#">checkout</a>
+                                          <a class="form-action-button" data-type="login-form">login</a>
+                                          <a class="form-action-button" data-type="signup-form">signup</a>
+                                     </div>
+                              </div>
+                      </div>
+                         <!-- SEARCH SECTION -->
+                         <div class="search-section">
+                                 <div class="container search">
+                                     <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                                     <form action="">
+                                             <div class="search-box">
+                                                  <input type="text" name="search" value="" class="search-input" placeholder="Enter product">
+                                                  <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                     </form>
+                                    
+                                 </div>
+                         </div>
+      
+                         <div class="navigation-links">
+                              <div class="container-link">
+                                      <div class="link">
+                                              <a href="index.html" class="">Home</a>
+                                              <a href="product.html">Products</a>
+                                              <a href="#">New products</a>
+                                              <a href="#">Contact us</a>
+                                              <a class="form-action-button" data-type="login-form">Login</a>
+                                              <a class="form-action-button" data-type="signup-form">signup</a>
+                                          </div>
+                                          <div class="phone"><a><i class="fas fa-phone"></i>Call us +2348012345678 </a></div>
+                              </div>
+                         </div>
+                 </div>
+             </section>
+      
+
+
+
+             <!-- ACCOUNT SECTION -->
+             <section class="account-section">
+                      <div class="container">
+                             <div class="row">
+                                 <div class="col-lg-3 col-md-3 col-sm-12 col-12 account-bar">
+                                     <div class="account-left-bar">
+                                           <div class="account-right-bar-image">
+                                                <div class="account-side-immage">
+                                                   <img src="images/profile-image.png" alt="profile-image">
+                                                   <i class="fas fa-pen"></i>
+                                                </div>
+                                                <h3 class="image-name">Username Name</h3>
+                                           </div>
+                                            <div class="account-left-links">
+                                                <ul>
+                                                    <li><i class="fas fa-user"></i><a href="account.html" class="active-link"> My Account</a></li>
+                                                    <li><i class="fas fa-shopping-cart"></i><a href="order.html">My order</a></li>
+                                                    <li><i class="fas fa-shopping-cart"></i><a href="cart.html"> My Cart</a></li>
+                                                    <li><i class="fas fa-address-card"></i><a href="billing.html">Billing Address</a></li>
+                                                    <li><i class="fas fa-cog"></i><a class="form-action-button" data-type="changePassword-form">Change password</a></li>
+                                                    <li><i class="fas fa-lock"></i><a href="#">Privacy</a></li>
+                                                    <li><i class="fas fa-trash"></i><a href="#">Delete Account</a></li>
+                                                </ul>
+                                            </div>
+                                     </div>
+                                 </div>
+                                 <!-- ACCOUNT CONTENT -->
+                                 <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                    <div class="account-details">
+                                            <div class="account-header">
+                                                <h2>Account Details</h2>
+                                            </div>
+                                            <div class="account-body">
+                                                <div class="row">
+                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                             <a href="order.html"><img src="images/order-image.jpeg" alt="order-image"></a>
+                                                             <h3>check orders</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                                <a href="cart.html"><img src="images/order-cart.jpeg" alt="order-cart"></a>
+                                                                <h3>Cart Information</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                                <a href="billing.html"><img src="images/order-billing.jpeg" alt="order-billing"></a>
+                                                                <h3>Billing Information</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                                <a><img src="images/order-password.jpeg" alt="order-password" class="form-action-button" data-type="changePassword-form"></a>
+                                                                <h3>Change password</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                            <a href="privacy.html"><img src="images/order-privacy.jpg" alt="order-privacy"></a>
+                                                            <h3>Account Privacy</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                                        <div class="account-items">
+                                                                 <a href="#"><img src="images/account-image-delete.jpeg" alt="account-image-delete"></a>
+                                                                <h3>Delete Account</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                 </div>
+                             </div>
+                      </div>
+             </section>
+
+
+
+
+
+             <!-- FOOTER SECTION -->
+             <section class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <div class="news-letter">
+                                       <h2>news letter</h2>
+                                       <p>subscribe to get the latest on sales, new release and more...</p>
+                                       <form action="" method="post">
+                                           <div class="form-group">
+                                               <input type="email" name="letter" class="form-control" value="" placeholder="Enter mail">
+                                               <button type="submit" name="subscribe">subscribe</button>
+                                           </div>
+                                       </form>
+                                      <ul>
+                                              <li class="li">supported payment system</li>
+                                              <li><img src="images/american-express.png" alt="american-express"></li>
+                                              <li><img src="images/master-card.png" alt="master-card"></li>
+                                              <li><img src="images/visa-card.png" alt="visa-card"></li>
+                                              <li><img src="images/paypal-card.jpg" alt="paypal-card"></li>
+                                      </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-6">
+                                <div class="info">
+                                        <h2>account info</h2>
+                                        <ul>
+                                                <li class="signup-button"><a>Login/Register</a></li>
+                                            <li><a href="order.html">My Order</a></li>
+                                            <li><a href="#">Order History</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-6">
+                                  <div class="info">
+                                          <h2>shipping info</h2>
+                                          <ul>
+                                              <li><a href="#">Secure Shipping</a></li>
+                                              <li><a href="#">Privacy Policy</a></li>
+                                              <li><a href="#">Our Policy</a></li>
+                                          </ul>
+                                  </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-6">
+                                  <div class="info">
+                                          <h2>quick links</h2>
+                                          <ul>
+                                              <li><a href="#">About Us</a></li>
+                                              <li><a href="#">Blog</a></li>
+                                              <li><a href="#">Testimonial</a></li>
+                                              <li><a href="#">Contact Us</a></li>
+                                              <li><a href="#"><i class="fas fa-phone"></i> +2348012345678</a></li>
+                                          </ul>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                  <div class="info-media">
+                                          <h2>quick links</h2>
+                                          <ul>
+                                              <li><img src="images/instagram.jpg" alt="instagram"></li>
+                                              <li><img src="images/facebook.jpg" alt="facebook"></li>
+                                              <li><img src="images/skipe.jpg" alt="skipe"></li>
+                                              <li><img src="images/linkedin.jpg" alt="linkedin"></li>
+                                              <li><img src="images/twitter.jpg" alt="twitter"></li>
+                                          </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy-right">copyright ©2020 all rights reserved boogie</div>
+              </section>
+            
+
+            
+
+         <script src="js/script.js"></script>
+    </body>
+</html>

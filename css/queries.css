@@ -1,0 +1,1789 @@
+
+/* ------------------------------------------- */
+/*           RESPONSIVENESS                    */
+/* ------------------------------------------ */
+
+
+
+/* respondsiveness from  992 to 1125*/
+@media only screen and ( max-width: 1125px){
+/* navigation */
+.container-link  .link a{ font-size: 50%;  }
+/* right bar */
+.myCart .myCart-header i, .freeShop .free-header i, .order-online .order-header i, .money-back .moneyBack-header i{ margin-right: 5px; }
+.myCart .myCart-header span, .freeShop .free-header span, .order-online .order-header span, .money-back .moneyBack-header span{ font-size: 50%; }
+
+/* hot sales */
+.hot-sale-image{ margin-right: 15px; }
+
+
+/* weekly deal */
+.weekly-item ul li{ font-size: 45%; }
+
+/* price sort */
+.sort form{
+padding: 0px 0px;
+}
+
+/* newest product */
+.item-new img{ height: 140px; }
+.new-deal-achor ul .new-deal-link .new-deal-dropdown{  width: 18%; }
+.new-deal-achor ul .new-deal-link{  font-size: 55%; margin-left: 0px;  padding: 5px 7px 5px 7px; }
+
+/* feati=ured product */
+.featured-item{ width: 100%; margin-left: 0px;}
+.featured-item img{ height: 145px; }
+.add-to-cart{ left: 20px; }
+.featured-item:hover .add-to-cart{ bottom: 70px; }
+
+
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+
+/* ================================================= */
+/*                MAIN CART                          */
+/* ================================================ */
+.main-cart .cart-image img{
+  width: 80%;
+  margin-left: 10%;
+  height: 160px;
+  padding: 10px;
+}
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.main-detail-image .detailImages{
+  width: 400px;
+  height: 550px;
+  margin-right: 5px;
+}
+.detail-images .carousel{
+  bottom: 145px;
+}
+/* detail side bar section */
+.detail-thumb-image img{
+  height: 70px;
+}
+/* subImages */
+
+
+/* ----------------------------------------------- */
+/*            FREQUENTLY BOUGHT                   */
+/* ---------------------------------------------- */
+.frequently-bought h2{
+   font-size: 80%;
+}
+.frequently-bought-body img{
+    width: 50%;
+    height: 170px;
+}
+.frequently-bought-item{
+  padding: 0px 20px;
+}
+
+
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+.viewed-container .viewed-items img{
+  height: 190px;
+}
+
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.customers-question ul li a{
+  font-size: 65%;
+}
+.advert-body .advert ul li{
+  font-size: 70%;
+}
+
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-body .advert img{
+  width: 90%;
+  height: 190px;
+}
+/* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 40%;
+  margin-left: 30%;
+}
+
+
+/* footer */
+.news-letter img{ width: 40px; }
+
+
+
+} /*end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* screen size from 871 to 991 */
+@media only screen and ( max-width: 991px){
+.container{ max-width: 100%;} 
+
+/* side bar */
+.bar-header span{ font-size: 55%; }
+
+/* hot sales */
+.hot-sale-image{  padding: 5px; width: 100%; margin-right: 40px;  }
+
+/* featured product */
+.featured-item{ width: 100%;  margin-left: 0%; }
+
+/* right bar */
+.right-bar{ margin-top: 50px;}
+.myCart .myCart-header span, .freeShop .free-header span, .order-online .order-header span, .money-back .moneyBack-header span{ font-size: 50%;  }
+/* right bar */
+.myCart, .freeShop, .order-online, .money-back { float: left;  margin-right: 0%; background-color: #fff;}
+
+/* newest product */
+.new-deals .item-new{ width: 100%; margin-left: 0px; }
+.new-deals .item-new img{ height: 130px; }
+.new-deal-achor ul .new-deal-link{  font-size: 55%; margin-left: 0px;  padding: 5px 5px 5px 5px; }
+
+/* weekly deal */
+.weekly-item{ height: 90px; }
+.weekly-item img{ width: 35%;  height: 80%; position: relative; top: 5px;}
+
+/* special deal */
+.special-deal{ margin-top: 60px; }
+
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ----------------------------------------------*/
+.detail-slide-frame{
+  height: 500px;
+}
+.main-detail-image .detailImages{
+  width: 360px;
+  height: 475px;
+  margin: 0px 25px 0px 5px;
+}
+/* detail side bar section */
+.detail-thumb-image img{
+  height: 60px;
+}
+
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+
+
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.question{
+  padding: 50px 50px;
+  margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-body .advert img{
+  height: 170px;
+}
+
+
+/* ----------------------------------------------- */
+/*            FREQUENTLY BOUGHT                   */
+/* ---------------------------------------------- */
+.frequently-bought h2{
+  font-size: 80%;
+}
+.frequently-bought-body img{
+   width: 60%;
+   height: 170px;
+   margin-left: 20%;
+}
+.frequently-bought-item{
+ padding: 0px 20px;
+}
+.frequently-bought-body .ratings i, span{
+  font-size: 50%;
+}
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-body .advert img{
+  width: 100%;
+  height: 180px;
+}
+
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+
+/* ================================================= */
+/*                MAIN CART                          */
+/* ================================================ */
+.cart-header h2{
+  padding: 20px 20px 10px 20px;
+}
+.cart-header h2,.cart-header i.fa-bars{
+   display: inline-block;
+}
+.cart-header i.fa-bars{
+   float: right;
+   padding: 20px 20px 0px 0px;
+   display: block;
+} 
+.main-cart .cart-image img{
+  height: 190px;
+}
+.cart-details ul li.cart-quantity span i:hover{
+  background-color: #ccc;
+}
+.cart-action a.save-for-later:hover{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #555;
+}
+.cart-action a.cart-delete:hover{
+  background-color: rgb(165, 3, 3);
+}
+.cart-summary-container{
+  position: fixed;
+  padding: 0px;
+  bottom: 0px;
+  top: 0px;
+  right: -500px;
+  z-index:50;
+  overflow-Y: scroll;
+  transition: all 0.5s ease;
+}
+.cart-summary{
+   height: 100vh;
+}
+.cart-summary-card i.fa-times{
+  display: inline-block;
+}
+.summary-header h2{
+  font-size: 100%;
+  font-weight: 600;
+}
+
+
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-image{
+  width: 90%;
+  margin-left: 5%;
+}
+.savedForLater-action a{
+  margin-right: 20px;
+}
+
+
+ /* ********************************************************* */
+/*               ORDER   SECTION                             */
+/* ********************************************************* */
+.order-naviagtion{
+  display: none;
+  position: absolute;
+  z-index: 50;
+  height: 100vh;
+  top: 0px;
+  left: -20px;
+}
+.order-header .fa-bars{
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.table-items{
+  transition: none;
+}
+.table-items:hover{
+  transform: none;
+}
+
+/* ========================================================== */
+/*                     ACCOUNT SECTION                       */
+/* ========================================================= */
+.account-side-immage i.fa-pen{
+  right: 5px;
+}
+/* ========================================================= */
+/*                        SIGNUP SECTION                     */
+/* ========================================================= */
+.signup-section, .login-section, .change-password-section{
+  width: 40%;
+  margin-left: 30%;
+}
+ /* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 50%;
+  margin-left: 25%;
+}
+/* ===============================footer ====================*/
+.news-letter img{ width: 35px; } 
+}
+
+
+
+
+
+
+
+
+/* screen size from 769 to 870 */
+@media only screen and ( max-width: 870px){
+/* search bar */
+.search-box{ width: 70%; }
+.container-link  .link a{ font-size: 50%;  margin-right: 10px; }
+.container-link  .phone a{ font-size: 55%; }
+
+/* side bar */
+.category-links li.link{  font-size: 55%; }
+
+/* main image */
+.main-images img{ height: 400px;  }
+.slide .tag h2{
+font-size: 120%;
+}
+
+/* hot deals */
+.hot-sale-image{ margin-right: 65px; }
+
+
+/* special deal */
+.special-deal img{ height: 150px; }
+
+/* right bar */
+.myCart .myCart-header i, .freeShop .free-header i, .order-online .order-header i, .money-back .moneyBack-header i{ margin-right: 0px;  padding-left: 5px; padding-top: 7px; width: 27px; height: 27px;  font-size: 65%; }
+.myCart .myCart-header span, .freeShop .free-header span, .order-online .order-header span, .money-back .moneyBack-header span{ font-size: 43%;  }
+.order-online a,  .freeShop a, .money-back a{  font-size: 44%;  color: black; }
+
+/* newest deal*/
+.new-deals .item-new img{ height: 110px; }
+
+
+/* featured product */
+.featured-item img{ height: 120px; }
+
+.add-to-cart{   position: static;  opacity: 1; visibility: visible; margin-top: 10px; }
+.featured-item:hover .add-to-cart{ bottom: 0px; }
+.add-to-cart a{ font-size: 70%; }
+
+/* footer */
+.news-letter h2, .info h2, .info-media h2{ font-size: 53%; }
+.news-letter ul li.li, .info ul li a{ font-size: 50%; }
+.news-letter img{ width: 25px; height: 20px;}
+.news-letter form button{font-size: 40%; letter-spacing: 1px; padding: 10px 25px; }
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.main-detail-image .detailImages{
+  width: 320px;
+  height: 450px;
+  margin: 0px 30px 0px 0px;
+}
+.subImage-container .angle{
+  display: none;
+}
+/* detail side bar section */
+.detail-thumb-image img{
+  height: 60px;
+}
+
+
+/* ----------------------------------------------- */
+/*            FREQUENTLY BOUGHT                   */
+/* ---------------------------------------------- */
+.frequently-bought-body img{
+   height: 150px;
+   width: 90%;
+   margin-left: 5px;
+}
+.frequently-bought-item{
+ padding: 0px 20px;
+}
+.frequently-bought-body .ratings i, span{
+  font-size: 50%;
+}
+.frequently-bought .direction{
+  top: 110px;
+}
+.frequently-bought .direction i:hover{
+  background-color: #f1f1f1;
+  color: #333;
+  opacity: 0.5;
+}
+
+
+
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-body .advert img{
+  width: 100%;
+  height: 150px;
+}
+
+
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-image{
+  width: 100%;
+  margin-left: 0%;
+}
+.savedForLater-action a{
+  margin-right: 0px;
+}
+.savedForLater-action a.addTo-cart{
+  margin-left: 10px;
+}
+ /* ********************************************************* */
+/*               ACCOUNT  SECTION                             */
+/* ********************************************************* */
+.account-items img{
+  height: 150px;
+}
+.account-side-immage i.fa-pen{
+  right: 0px;
+  font-size: 70%;
+}
+
+
+}     /* end*/
+
+
+
+
+
+
+
+
+
+
+
+/* screen size from 577 to 767 */
+@media only screen and ( max-width: 767px){
+.profile-section{ 
+  display: block; 
+  position: fixed;
+  z-index: 100;
+}
+.sticky-profile{
+position: fixed;
+}
+.phone, .top-link{ display: none;}
+.profile{   
+  overflow: scroll; 
+  left: -680px;
+  display: block;
+}
+.side{
+display: none;
+}
+
+
+/* stick navigation */
+.sticky{
+position: fixed;
+width: 100%;
+background-color: #fff;
+z-index: 10;
+padding: 5px;
+box-shadow: 2px  2px 2px rgba(0, 0 , 0, 0.1);
+}
+.sticky .mysection .logo img{
+display: block;
+}
+.sticky .top-link{ display: none;}
+
+/* ------------------------------------------ */
+/*          MOBILE DEVICE SIDE BAR CATEHORY     */
+/* ------------------------------------------ */
+.category-Items{
+display: none;
+
+}
+.category-Items ul.sideLink{
+padding-left: 20px;
+}
+.category-Items .link{
+padding: 5px;
+font-size: 100%;
+text-transform: none;
+}
+.category-Items .dropdown ul {
+margin-left: 10px;
+}
+.category-Items .dropdown ul li{
+padding: 0px;
+border-bottom: none;
+}
+.category-Items .dropdown ul li a{
+font-size: 100%;
+}
+.category-Items .dropdown ul li:hover{
+background-color: transparent;
+}
+.dropdown ul li:hover a{
+color: #333;
+}
+.category-Items .dropdown{
+opacity: 1;
+height: 100%;
+overflow: visible;
+width: 100%;
+position: static;
+z-index: 100;
+background-color: #fff;
+display: none;
+border: none;
+box-shadow: none;
+}
+.category-Items .link:hover{
+  font-weight: 500;
+}
+.container-link  .link a:hover{
+  background-color: #333;
+}
+.category-Items .link:hover .category-Items .dropdown{
+  display: block;
+}
+.container-link{
+  width: 100%;
+}
+.navigation-links .container-link .link a.form-action-button{
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+/* navigation*/
+.top-link a{   margin-left: 0px; }
+.container-link{  width: 100%;  margin-left: 0%; padding-left: 10px; padding-right: 10px;  }
+.mysection h2{ padding-top: 10px;}
+.mysection i{ display: inline-block; }
+/* main */
+.expland{ margin: 0px;  padding: 0px;  }
+
+/* sidebar section */
+.sidebar-section{ margin-top: 0px; }
+
+/* right bar */
+.right-bar{ margin-top: 50px;}
+.myCart .myCart-header i, .freeShop .free-header i, .order-online .order-header i, .money-back .moneyBack-header i{ margin-right: 0px;  padding-left: 8px; padding-top: 8px; width: 35px; height: 35px;  font-size: 80%; }
+.myCart .myCart-header span, .freeShop .free-header span, .order-online .order-header span, .money-back .moneyBack-header span{ font-size: 43%;  }
+.order-online a,  .freeShop a, .money-back a{  font-size: 44%;  color: black; }
+.myCart ul, .order-online ul, .freeShop ul, .money-back ul{ margin-left: 10px; }
+
+/* weekly deal  */
+.weekly-for-mobile{ display: block; margin-top: 100px;}
+.weekly-for-mobile .week-header{ margin-bottom: 30px;}
+.weekly-item{ padding: 5px; border: none; margin-bottom: 50px; height: 125px;}
+.weekly-item img{ width: 50%; height: 100px;}
+.weekly-item{
+  position: relative;
+  opacity: 0;
+}
+/* hot deals */
+.hot-sale-image img{
+  width: 150px;
+  height: 175px;
+}
+
+
+/* featured product */
+.featured-header{
+background-color:  rgb(201, 0, 0);
+padding: 0px;
+margin-bottom: 30px;
+}
+.featured-header h2, .week-header h2, .hot-sale-header h2, .new-deal-header h2{
+font-weight: 300;
+border: none;
+font-size: 60%;
+color: #fff;
+text-align: center;
+padding: 10px;
+padding-bottom: 10px;
+}
+.featured-item img{ height: 150px; }
+.featured-item{ width: 80%; margin-left: 10%; }
+.add-to-cart a{ font-size: 90%; }
+
+
+/* footer */
+.news-letter img{ width: 40px; } 
+.news-letter, .info{ margin-bottom: 20px;}
+.news-letter h2, .info h2{ font-size: 80%;}
+.footer{  padding: 20px 0px 0px 0px;   }
+.copy-right{ background-color: #333; padding: 20px 0px;}
+
+/* newest deals */
+
+.new-deals .item-new img{ 
+height: 135px; 
+}
+.new-deals .new-deal-achor{
+display: none;
+}
+.new-deals .new-deal-header i{
+display: block;
+padding-top: 5px;
+}
+
+/* ------------------------------------------ */
+/*     MOBILE DEVICE NEWEST DEAL NAVIGATION   */
+/* ------------------------------------------ */
+.new-deals .new-deal-achor{
+display: none;
+}
+.new-deal-achor{ 
+    float: none;
+    padding-right: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    top: 40px;
+    left: 0px;
+    border: 1px solid #f1f1f1;
+    padding-bottom: 50px;
+}
+.new-deal-achor ul .new-deal-link{
+    display: block;
+    color: #333;
+    font-size: 60%;
+    margin-left: 0px;
+    line-height: 30px;
+    border-radius: 0px;
+    text-align: center;
+ }
+ .new-deal-achor ul .new-deal-link:hover{
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+ }
+ .new-deal-achor ul .new-deal-link .new-deal-dropdown ul li:hover{
+    background-color: #fff;
+ }
+ .new-deal-achor ul .new-deal-link .new-deal-dropdown a:hover{
+    color: #333;
+  }
+ .new-deal-achor ul .new-deal-link .new-deal-dropdown{
+    background-color: #fff;
+    position: static;
+    width: 100%;
+    border-top: 0px;
+    box-shadow: none;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    border-top: 1px solid #f1f1f1;
+ }
+ .new-deal-achor ul .new-deal-link .new-deal-dropdown a{
+    font-size: 80%;
+    padding: 0px;
+    line-height: 25px;
+    font-weight: 350;
+ }
+ .new-deal-achor ul .new-deal-link:hover .new-deal-dropdown{
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+  }
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.detail-slide-frame{
+  width: 80%;
+  margin-left: 10%;
+  height: 580px;
+}
+.main-detail-image .detailImages{
+  width: 400px;
+  height: 570px;
+  margin: 0px 20px 0px 20px;
+}
+.subImage-frame .sub-image{
+  border-radius: 50%;
+  height: 50px;
+}
+.subImage-frame .sub-image img{
+  border-radius: 50%;
+}
+.detail-images .carousel{
+  bottom: 130px;
+}
+/* detail side bar section */
+.detail-thumb-image{
+  width: 80%;
+  margin-left: 10%;
+}
+.detail-thumb-image img{
+  height: 100px;
+}
+
+
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-body .advert img{
+  width: 100%;
+  height: 150px;
+}
+
+
+/* ----------------------------------------------- */
+/*            FREQUENTLY BOUGHT                   */
+/* ---------------------------------------------- */
+.frequently-bought{
+  margin-top: 50px;
+}
+.frequently-bought h2{
+  font-size: 150%;
+  font-weight: 400;
+  text-align:center;
+}
+.frequently-bought-body img{
+  width: 80%;
+  height: 450px;
+  margin-left: 10%;
+}
+.frequently-bought .direction{
+  top: 200px;
+}
+.frequently-bought .direction i:hover{
+  background-color: #f1f1f1;
+  color: #333;
+}
+.frequently-bought-item ul, .frequently-bought-item h3{
+  padding: 0px 50px;
+}
+.frequently-bought-item{
+  padding: 0px 0px;
+ }
+.frequently-bought .direction .fa-angle-left{
+  left: 0px;
+}
+.frequently-bought .direction .fa-angle-right{
+right: 0px;
+}
+
+
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+.customer-view{
+  margin-top: 50px;
+}
+.customer-view-header h2{
+  font-size: 130%;
+  font-weight: 400;
+  text-align: center;
+}
+.customer-viewed-body .direction{
+  top: 100px;
+}
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.question-header h2{
+  font-size: 125%;
+  font-weight: 400;
+}
+.question form{
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 0px;
+  text-align: center;
+}
+.question form input{
+  width: 80%;
+  float: left;
+  margin-right: 5px;
+  font-size: 75%;
+}
+.customers{
+  width: 100%;
+}
+.customers-question .comment, .delete, .report{
+ margin-top: 20px;
+}
+/* ------------------------------------------------------- */
+/*             ADVERT SECTION                             */
+/* ----------------------------------------------------- */
+.advert-header h2{
+  font-size: 120%;
+  font-weight: 400;
+  text-align: center;
+}
+.advert-body .advert{
+  width: 80%;
+  margin-left: 10%;
+}
+.advert-body .advert img{
+  width: 80%;
+  height: 230px;
+  margin-left: 10%;
+}
+.advert-body .advert ul {
+  padding: 20px;
+}
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+.main-cart .cart-image img{
+  width: 100%;
+  margin-left: 0px;
+  height: 160px;
+}
+.cart-details .cart-name{
+  text-transform: uppercase; 
+}
+.cart-details ul li{
+  text-transform: none;
+}
+.cart-action a{
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.cart-action a.cart-delete{
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.might-like-container .direction{
+  display: none;
+}
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-image img{
+  width: 70%;
+  margin-left: 15%;
+}
+ /* ********************************************************* */
+/*               ACCOUNT  SECTION                             */
+/* ********************************************************* */
+
+.account-bar{
+  display: none;
+}
+ /* ********************************************************* */
+/*               BILLING  SECTION                             */
+/* ********************************************************* */
+.main-billing-section{
+  padding: 10px;
+}
+.billing-mobile{
+  display: none;
+}
+ /* ********************************************************* */
+/*               ORDER  SECTION                             */
+/* ********************************************************* */
+.order-header .fa-bars{
+  display: none;
+}
+.order-cont li{
+  display: inline-block;
+}
+.order-toatl{
+  background-color: #fff;
+  color: #333;
+  margin-left: 50px;
+}
+a.order-view-details{
+  border: 1px solid #ccc;
+  padding: 2px 5px 4px 5px;
+  border-radius: 6px;
+  font-size: 55%;
+}
+/* ========================================================= */
+/*                        SIGNUP SECTION                     */
+/* ========================================================= */
+.signup-section, .login-section, .change-password-section{
+  width: 50%;
+  margin-left: 25%;
+  overflow: scroll;
+}
+.active-darkSkin{
+  z-index: 150;
+}
+ /* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 60%;
+  margin-left: 20%;
+}
+
+}   /* end*/
+
+
+
+
+
+
+
+
+
+
+/* mobile device screen from width of 486 50 576px */
+@media only screen and ( max-width: 576px){
+  /* mobile profile */
+  .profile-img i.fa-pen{
+    font-size: 70%;
+}
+/* navigation */
+.container-link  .link a{ font-size: 50%;   margin-right: 0px; }
+.right-bar{ display: none;}
+.mysection i{ font-size: 150%; }
+.mysection h2{ padding-top: 10px;}
+/* hot sales */
+.hot-sale{ margin-top: 50px;}
+
+
+/* newest deal*/
+.new-deals{ background-color: #f6f4f4;}
+.new-deals .item-new img{ height: 130px; }
+.new-deals .new-item{ box-shadow: none;}
+.new-deals .col-4 { margin: 0px; padding: 0px; }
+
+/* featured product */
+.featured-item img{ width: 100%; height: 150px; margin-left: 0%;}
+.featured-item{ width: 100%; margin-left: 0%; }
+.add-to-cart a{ font-size: 90%; }
+.add-to-cart{   padding: 5px;}
+
+/* pagination */
+.pagination{ display: inline-block; margin-left: 24%; }
+
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.detail-slide-frame{
+  width: 100%;
+  margin-left: 0%;
+  height: 520px;
+}
+.main-detail-image .detailImages{
+  width: 375px;
+  height: 500px;
+  margin-right: 5px;
+}
+.detail-images{
+  padding: 30px 0px;
+}
+.subImage-container{
+  width: 80%;
+  margin-left: 10%;
+}
+.detail-images .carousel{
+  bottom: 170px;
+}
+.detail-images .direction{
+  display: none;
+}
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+.customer-view{
+  background-color: #fff;
+  padding: 30px 0px;
+}
+.customer-viewed-body .direction{
+  display: none;
+}
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.question-header h2{
+  text-align: center;
+  padding: 10px;
+}
+.question{
+  padding: 50px 0px;
+}
+
+/* --------------------------------------------- */
+/*           ADVERT SECTION                      */
+/* --------------------------------------------- */
+.advert-body .advert{
+  width: 100%;
+  margin-left: 0%;
+}
+
+
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+.main-cart .cart-image img{
+  height: 140px;
+}
+.cart-action {
+   text-align: right;
+   margin-top: 10px;
+}
+.cart-action a{
+  padding: 5px 35px 7px 35px;
+  border-radius: 0px;
+}
+.cart-action a.cart-delete{
+  background-color: rgb(165, 3, 3);
+  color: #fff;
+}
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-items{
+  margin-bottom: 50px;
+  width: 100%;
+}
+.saveForLater-image img{
+  width: 100%;
+  height: 200px;
+  margin-left: 15%;
+}
+.savedForLater-action{
+  text-align: right;
+  padding: 0px 50px;
+}
+.savedForLater-action a{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+.savedForLater-action a.addTo-cart{
+  border-left: 1px solid #ccc;
+  padding-left: 35px;
+}
+.saved-name-qty .saved-item{
+  margin-right: 0%;
+}
+ul.saveForLater-details{
+  padding-left: 40px;
+}
+ul.saveForLater-details li{
+  text-transform: none;
+}
+ul.saveForLater-details li .name{
+  text-transform: uppercase;
+}
+.savedForLater-totel{
+  text-align: center;
+}
+.savedForLater-totel ul{
+  display: block;
+}
+.savedForLater-action{
+  margin-top: 10px;
+}
+.savedForLater-action a{
+  border-radius: 0px;
+}
+ /* ********************************************************* */
+/*               ORDER SECTION                                */
+/* ********************************************************* */
+.table-items{
+  box-shadow: none;
+  padding-bottom: 10px;
+  margin: 20px 0px;
+  background-color: #fff;
+}
+.order-detail-one{
+  box-shadow: 2px 3px 5px 2px rgba(0,0,0,0.1);
+  width: 100%;
+  padding: 5px;
+}
+.order-status{
+  margin-top: 10px;
+}
+.order-review-table thead td{
+  font-size: 55%;
+}
+.order-review-table tbody td{
+  font-size: 55%;
+  color: #555;
+}
+ /* ********************************************************* */
+/*                BILLING SECTION                            */
+/* ********************************************************* */
+.billing-header span{
+  padding: 5px 10px 7px 10px;
+  font-size: 70%;
+}
+/* ========================================================= */
+/*                        SIGNUP SECTION                     */
+/* ========================================================= */
+.signup-section, .login-section, .change-password-section{
+  width: 60%;
+  margin-left: 20%;
+}
+ /* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+
+
+
+}  /*end*/
+
+
+
+
+
+
+
+
+/* mobile device screen from width of 399 50 485px */
+@media only screen and ( max-width: 485px){
+  /* mobile profile */
+  .profile-img i.fa-pen{
+    padding: 8%;
+    right: 8px;
+}
+.profile-link ul li a, .category, .details{
+  font-size: 75%;
+}
+.add-to-cart{ text-align: center;}
+.add-to-cart i{ display: none;}
+.add-to-cart a{ font-size: 80%;}
+
+
+/* hot sales */
+.new, .recent{ padding: 0px 6px 2px 6px; font-size: 50%; }
+.hot-sale-image{width: 100%; margin-right: 0px;  border-bottom: none;}
+.hot-sale-image img{ width: 200px; height: 225px; }
+.swipe-button{ margin-top: 10px; text-align: center;}
+
+
+/* main  */
+.courosel{ top: 350px; }
+
+/* newest deals */
+.new-deals .item-new {  width: 100%;  margin-left: 0%; margin-bottom: 10px; padding: 0px }
+.new-deals .item-new img{ height: 120px; }
+
+
+/* weekly deal  */
+.weekly-item img{ width: 45%; height: 80px;}
+
+/* featured product */
+.featured-header, .hot-sale-header{ background-color:rgb(201, 0, 0); padding: 0px; margin-bottom: 10px;}
+.featured-header h2, .hot-sale-header h2{  border-left: none;  font-size: 60%; text-align: center; color: #fff;   }
+.featured-item img{height: 130px; }
+.featured-item{ padding: 0; border: none; margin-bottom: 40px; }
+.featured-item ul li{ font-size: 50%;}
+.add-to-cart a{ font-size: 90%; }
+
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.detail-container{
+  padding: 5px;
+}
+.detail-slide-frame{
+  width: 100%;
+  margin-left: 0%;
+  height: 500px;
+}
+.main-detail-image{
+  padding: 0px
+}
+.detail-images .carousel{
+  bottom: 175px;
+}
+.main-detail-image .detailImages{
+  width: 325px;
+  height: 475px;
+  margin-right: 20px;
+}
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+
+/* --------------------------------------------- */
+/*            FREQUENTLY BOUGHT SECTION          */
+/* --------------------------------------------- */
+.frequently-bought-body img{
+  height: 275px;
+}
+.frequently-bought-item ul, .frequently-bought-item h3{
+    padding: 0px;
+}
+.frequently-bought .direction{
+  top: 150px;
+}
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+.main-cart .cart-image{
+  width: 100%;
+}
+.saveForLater-items .col-4, .saveForLater-items .col-8{
+  padding: 0px;
+}
+.cart-action {
+   text-align: right;
+   margin-top: 10px;
+}
+.cart-action a{
+  padding: 5px 7% 5px 7%;
+  border-radius: 4px;
+}
+.cart-action a.cart-delete{
+  background-color: #fff;
+  color: #555;
+}
+.cart-details ul li.cart-name span{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.cart-details ul li.cart-quantity span{
+  position: relative;
+  top: -3px;
+}
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-items{
+  margin-bottom: 50px;
+}
+.saveForLater-image img{
+  width: 100%;
+  margin-left: 20%;
+  height: 160px;
+}
+ul.saveForLater-details{
+  padding-left: 40px;
+}
+.savedForLater-totel{
+  text-align: center;
+}
+.savedForLater-totel ul{
+  display: block;
+}
+
+ /* ********************************************************* */
+/*               ACCOUNT  SECTION                             */
+/* ********************************************************* */
+.account-section{
+  padding: 10px;
+}
+.account-items img{
+  height: 160px;
+}
+
+
+ /* ********************************************************* */
+/*               ORDER   SECTION                             */
+/* ********************************************************* */
+.account-section .container{
+  min-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.order-item{
+  position: relative;
+}
+.order-mobile{
+  display: none;
+  margin-top: 10px;
+}
+
+.order-action {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.order-action .fa-angle-right, .order-action .fa-angle-down{
+  border: 1px solid #ccc;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+  color: #bbb;
+}
+.order-item{
+  display: flex;
+}
+
+/* ==================================================== */
+/*                      INDEX CINTENT SECTION           */
+/* =================================================== */
+.items-category-container .col-6{
+  margin: 0px;
+  padding: 10px;
+}
+/* ========================================================= */
+/*                        SIGNUP SECTION                     */
+/* ========================================================= */
+.signup-section, .login-section, .change-password-section{
+  width: 90%;
+  margin-left: 5%;
+}
+.signup-header h2, .login-header h2{
+  font-size: 100%;
+}
+ /* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+
+}  /*end*/
+
+
+
+
+
+
+
+
+
+
+/* mobile device screen from width of 321 50 398px */
+@media only screen and ( max-width: 398px){
+  /* mobile profile */
+  .profile-img i.fa-pen{
+    right: 0px;
+}
+.profile-link ul li a, .category, .details{
+  font-size: 70%;
+}
+/* navigation */
+.container-link  .link a{ font-size: 40%;   margin-right: 0px; }
+/* main */
+.main-images img{ width: 100%; height: 300px; }
+.slide .tag{ top: 150px; }
+.right-bar{ display: none;}
+.courosel{ top: 250px; }
+
+/* hot sales */
+.hot-sale{ margin-top: 50px; }
+.images-swipe{ padding-left: 0px; padding-top: 10px; }
+.hot-sale-image{ border-bottom: none;  margin-right: 20px; padding: 0px; }
+.hot-sale-image img{ width: 150px; height: 180px; padding: 0px; }
+
+
+
+/* newest deal */
+.new-item .col-4{ min-width: 50%; }
+
+/* newest deals */
+.new-deals .item-new{ padding: 0px 10px;}
+.new-deals .item-new img{ height: 140px; } 
+.new-deals .item-new ul{ margin-top: 10px; }
+
+/* weekly deal  */
+.weekly-for-mobile .col-6{ min-width: 100%; }
+.weekly-for-mobile{ margin-bottom: 100px;}
+.weekly-item{ padding-bottom: 15px; border: none; margin-bottom: 0px;  border-bottom: 1px solid #f1f1f1; height: 150px;}
+.weekly-item img{ width: 35%; height: 125px; margin-right: 10px;}
+.weekly-item ul{ padding-top: 25px; }
+.weekly-item ul li{ font-size: 60%; }
+.weekly-item ul li a.show-detail-btn{ font-size: 80%; }
+
+/* featured product */
+.featured-header, .hot-sale-header{ background-color:rgb(201, 0, 0); padding: 0px; margin-bottom: 30px;}
+.featured-header h2, .hot-sale-header h2{ border-left: none; font-size: 60%;  text-align: center; color: #fff; }
+.featured-item img{height: 110px; }
+.featured-item{ padding: 0; border: none;}
+.featured-item ul li{ font-size: 50%;}
+.add-to-cart a{ font-size: 90%; }
+.percentage{ margin: 0px; padding: 0px 2px;  }
+
+
+/* pagination */
+.pagination{ margin-left: 20%;  }
+.pagination a{ font-size: 60%;  padding: 2px 10px 5px 10px;}
+
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.detail-slide-frame{
+  height: 470px;
+}
+.main-detail-image .detailImages{
+  width: 315px;
+  height: 450px;
+  margin: 0px 20px 0px 5px;
+}
+.detail-images .carousel{
+  bottom: 170px;
+}
+.subImage-container{
+  width: 90%;
+  margin-left: 5px;
+}
+/* ----------------------------------------------- */
+/*            PRODUCT DETAILS                     */
+/* ---------------------------------------------- */
+.product-details{
+  padding: 0px 10px;
+}
+.product-detail-body{
+  padding: 5px 10px;
+}
+.detail-thumb-image img{
+  height: 70px;
+}
+/* ----------------------------------------------- */
+/*             FREQUENTLY  BOUGHT                */
+/* ---------------------------------------------- */
+.frequently-bought{
+  padding: 0px 0px;
+}
+.frequently-bought h2{
+  font-size: 110%;
+}
+.frequently-bought-body img{
+  height: 275px;
+}
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+.customer-view-header h2{
+  font-size: 110%;
+  padding: 0px 5px;
+}
+
+
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.question-header h2{
+  font-size: 110%;
+}
+.customers-question .comment, .delete, .report{
+  padding: 0px 10px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+.question form input{
+  width: 75%;
+}
+/* --------------------------------------------- */
+/*           ADVERT SECTION                      */
+/* --------------------------------------------- */
+.advert-header h2{
+  font-size: 110%;
+}
+.advert-body .advert img{
+  height: 200px;
+}
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+.main-cart .cart-image{
+  width: 100%;
+}
+.main-cart .cart-image img{
+  height: 100px;
+  padding: 0px;
+  margin-top: 20px;
+}
+.cart-details ul li.cart-name{
+  font-size: 55%;
+}
+.cart-details ul li.cart-quantity span{
+  position: relative;
+  top: -3px;
+}
+.cart-details ul li.cart-quantity span i{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin-right: 0px;
+    padding: 5px;
+    width: 24px;
+    color: rgb(103, 101, 101);
+    position: relative;
+ }
+ .cart-details ul li.cart-quantity span i.fa-angle-left{
+  padding-left: 7px;
+}
+ .cart-details ul li.cart-quantity span i.fa-angle-right{
+  padding-left: 9px;
+  right: -10px;
+}
+.cart-action {
+   text-align: center;
+   margin-top: 10px;
+}
+.cart-action a{
+  margin: 10px 0px 0px 0px;
+  padding: 5px 12% 5px 12%;
+}
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-image img{
+  height: 150px;
+}
+.savedForLater-action a{
+  padding: 0px;
+}
+.savedForLater-action a.addTo-cart{
+  padding-left: 15px;
+}
+ /* ********************************************************* */
+/*               ACCOUNT  SECTION                             */
+/* ********************************************************* */
+.account-items img{
+  height: 180px;
+}
+.account-body .col-6{
+   min-width: 100%;
+}
+.account-items{
+  width: 90%;
+  margin-left: 5%;
+}
+ /* ********************************************************* */
+/*               BILLING  SECTION                             */
+/* ********************************************************* */
+.main-billing-section form button{
+  width: 100%;
+} 
+.cart-header h2{
+  font-size: 80%;
+}
+.billing-header span{
+  padding: 5px 10px;
+  font-size: 50%;
+}
+ /* ********************************************************* */
+/*               ORDER   SECTION                             */
+/* ********************************************************* */
+.order-action {
+  top: 55px;
+  right: 5px;
+}
+.order-toatl{
+  margin-left: 0px;
+}
+.order h2{
+  font-size: 80%;
+}
+/* ==================================================== */
+/*                      INDEX CINTENT SECTION           */
+/* =================================================== */
+.items-category-container .cat-item img{
+  height: 120px;
+}
+.items-category-container .cat-item h4{
+  font-size: 60%;
+}
+.items-category-container .cat-item p{
+  font-size: 50%;
+}
+ /* ========================================================= */
+ /*              CHECKOUT PAYMENT FORM                        */
+ /* ========================================================= */
+ .checkOutPayment{
+  width: 100%;
+  margin-left: 00%;
+  padding-bottom: 20px;
+}
+.checkOutPayment .payheader h3{
+  font-size: 100%;
+  font-weight: 400;
+}
+.checkOutPayment .col-8, .checkOutPayment .col-4{
+  min-width: 100%;
+}
+.checkOutPayment input.amount{
+  font-size: 70%;
+}
+.checkOutPayment button{
+ font-size: 80%;
+}
+.checkoutBody{
+  height: 100%;
+}
+
+
+
+
+}/*end*/
+
+
+
+
+/* mobile device screen from width of 1 t0 320px */
+@media only screen and ( max-width: 321px){
+
+/* ----------------------------------------------- */
+/*             DETAIL SECTION BODY                */
+/* ---------------------------------------------- */
+.detail-slide-frame{
+  height: 330px;
+}
+.main-detail-image .detailImages{
+  width: 250px;
+  height: 325px;
+  margin: 0px 15px 0px 10px;
+}
+.detail-images .carousel{
+  bottom: 160px;
+}
+
+/* ----------------------------------------------- */
+/*            PRODUCT DETAILS                     */
+/* ---------------------------------------------- */
+.product-details{
+  padding: 0px 10px;
+}
+.product-detail-header h2{
+  font-size: 100%;
+  font-weight: 400;
+  text-align: center;
+}
+.product-detail-body{
+  padding: 5px 10px;
+}
+/* ----------------------------------------------- */
+/*            FREQUENTLY BOUGHT                   */
+/* ---------------------------------------------- */
+.frequently-bought-body img{
+  height: 300px;
+}
+
+/* --------------------------------------------- */
+/*            CUSTOMER VIEW                      */
+/* --------------------------------------------- */
+.customer-view-header h2{
+  font-size: 100%;
+}
+
+/* --------------------------------------------- */
+/*           QUESTION SECTION                    */
+/* --------------------------------------------- */
+.question-header h2{
+  font-size: 100%;
+}
+.question form input{
+  width: 70%;
+  margin-right: 6px;
+  font-size: 75%;
+}
+/* --------------------------------------------- */
+/*           ADVERT SECTION                      */
+/* --------------------------------------------- */
+.advert-header h2{
+  font-size: 100%;
+}
+.advert-body .advert img{
+  height: 175px;
+}
+
+
+ /* ********************************************************* */
+/*               SHOPPING CART SECTION                        */
+/* ********************************************************* */
+
+/* ================================================= */
+/*             SAVE FOR LATER SECTION               */
+/* ================================================ */
+.saveForLater-header h2{
+  font-size: 80%;
+}
+.saveForLater-header p{
+  font-size: 55%;
+}
+.saveForLater-image img{
+  height: 140px;
+}
+ul.saveForLater-details{
+  font-size: 95%;
+}
+.savedForLater-action a{
+  font-size: 70%;
+}
+.saved-name-qty{
+  margin-bottom: 0px;
+}
+.saved-name-qty .saved-item{
+  display: block;
+}
+.saved-name-qty .saved-item.qty{
+  float: none;
+  padding-right: 0px;
+}
+
+.savedForLater-totel ul{
+  font-size: 80%;
+}
+
+
+/* ================================================= */
+/*             MIGHT LIKE ITEMS SECTION             */
+/* ================================================ */
+.might-like-header h2{
+  font-size: 85%;
+}
+.might-like-item{
+  width: 130px;
+}
+.might-like-item img{
+  height: 150px;
+}
+.might-like-item ul{
+  font-size: 80%;
+}
+
+.order-header h2{
+  margin-right: 10px;
+}
+/* ================================================= */
+/*             BILLING SECTION             */
+/* ================================================ */
+
+
+
+}/*end*/
