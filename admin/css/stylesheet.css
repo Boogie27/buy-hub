@@ -432,6 +432,10 @@ ul.sales-amount li.saleAmount{
     font-weight: 500;
     color: #333;
     width: 100%;
+    text-decoration: none;
+}
+.order-activity-container #order-activity-image{
+    padding-right: 50px;
 }
 .order-activity-container #order-activity-image img{
     width: 40px;
@@ -453,7 +457,7 @@ ul.sales-amount li.saleAmount{
 }
 .order-activity-drop-down i.fa-ellipsis-v{
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 0px;
 }
 .order-activity-drop-down ul{
@@ -661,6 +665,9 @@ ul.sales-amount li.saleAmount{
 .table-option{
     position: relative;
     width: 15%;
+}
+.table-option li{
+    width: 100px;
 }
 .table-option i.fa-ellipsis-h{
     position: absolute;

@@ -96,39 +96,10 @@ if($(window).width() < 992){
       }
       
 
-// =========================================================================
-//               FUNCTION THAT DISPLAYS THE ORDER ACTIVITY OPTION DROPDOWN
-// =========================================================================
-//  var orderActivity = $(".order-activity-drop-down .fa-ellipsis-v");
-//  var lightSkin = $(".light-skin");
-//  var dropDownItem = $(".order-dropdown");
 
-//         $.each(orderActivity, function(index, current){
-//            var  dropDown = $(current).parent().find(".order-dropdown")
-//                  function showDropDown(){
-//                     if(dropDown){
-//                          $(dropDown).show();
-//                     }
-//                  }
-
-//                   $(current).mouseover(function(e){ 
-//                     showDropDown()
-//                   });
-
-//                   $(dropDown).mouseover(function(e){ 
-//                     showDropDown()
-//                   });
-                  
-//                   $(current).mouseout(function(e){ 
-//                        $(dropDownItem).hide()
-//                 });
-//                 $(dropDown).mouseout(function(e){ 
-//                     $(dropDownItem).hide()
-//              });
-//         });
-       
-       
-         
+// ======================================================================
+// FUNCTION THAT DISPLAYS THE DROP DOWNS
+// =======================================================================       
      var itemContainer =  {
              parent: $(".parent"),
              productPropDown: $(".childDropDown"),
