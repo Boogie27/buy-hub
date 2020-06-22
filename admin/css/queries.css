@@ -199,7 +199,7 @@
     width: 45%;
 }
 /* product */
-.products-items-header ul li.addNewProduct{
+.products-items-header ul li.addNewProduct, .main-items-container-header ul li.addNewProduct{
     font-size: 65%;
     padding: 3px 10px;
     top: 7px;
@@ -235,6 +235,10 @@
 /* product */
 .products-items-header ul li.addNewProduct{
     top: -100px;
+    right: -20px;
+}
+.main-items-container-header ul li.addNewProduct{
+    top: -65px;
     right: -20px;
 }
 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>products page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/queries.css">
+        <link rel="stylesheet" href="font-awesome/all.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+    </head>
+<body>
+
+
+    
+    <div class="dark-skin"></div>
+
+   
+    <!-- NAVIAGTION SECTION -->
+    <section class="navigation">
+        <div class="nav-container">
+             <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                      <div class="logo">buy Hub</div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-9 col-12 mobile-nav-content">
+                      <div class="profile">
+                          <ul class="ul-nav">
+                              <li class="profileImage">
+                                  <img src="profile-image/profile-image.png" alt="profile-image"> 
+                                  <i class="fa fa-circle"></i>
+                                  <span>Logan Usher</span>
+                              </li>
+                              <li><a href="#"><i class="far fa-envelope"></i> <i class="fa fa-circle message"></i></a></li>
+                              <li><a href="#"><i class="far fa-bell"></i> <i class="fa fa-circle notification"></i></a></li>
+                              <li><i class="fas fa-power-off"></i></li>
+                              <li><i class="fas fa-bars" id="sideNavOpenButton"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-5 col-md-4 navSearch">
+                       <form action="" method="post">
+                           <input type="text" name="" value="" class="form-control" placeholder="Search...">
+                           <button type="" name=""><i class="fa fa-search"></i></button>
+                       </form>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-9 col-12 desktop-nav-content">
+                      <div class="profile">
+                          <ul class="ul-nav">
+                              <li class="profileImage">
+                                  <img src="profile-image/profile-image.png" alt="profile-image"> 
+                                  <i class="fa fa-circle"></i>
+                                  <span>Logan Usher</span>
+                              </li>
+                              <li><a href="#"><i class="far fa-envelope"></i> <i class="fa fa-circle message"></i></a></li>
+                              <li><a href="#"><i class="far fa-bell"></i> <i class="fa fa-circle notification"></i></a></li>
+                              <li><i class="fas fa-power-off"></i></li>
+                              <li><i class="fas fa-bars" id="sideNavOpenButton"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+             </div>
+        </div>
+  </section>
+
+
+
+    <section class="products-container cont">
+             <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-5 col-10 navi" id="sideNavigation">
+                    <div class="side-navigation">
+                       <div class="side-nav-header">
+                           <img src="profile-image/profile-image.png" alt="profile-image">
+                           <ul class="sizeBar-nav">
+                               <li>Logan Usher</li>
+                               <li class="position">sales manager</li>
+                               <i class="fas fa-times" id="sideNavCloseButton"></i>
+                           </ul>
+                       </div>
+                       <div class="side-nav-content">
+                           <ul>
+                               <li><a href="index.html">Dash Board <i class="fas fa-home"></i></a></li>
+                               <li><a href="products.html">Produts <i class="far fa-folder"></i></a></li>
+                               <li><a href="brand.html">Brands <i class="fa fa-cube"></i></a></li>
+                               <li><a href="category.html">Categories <i class="fa fa-cubes"></i></a></li>
+                               <li><a href="#">Orders <i class="fas fa-shopping-cart"></i></a></li>
+                               <li><a href="#">Users <i class="far fa-user"></i></a></li>
+                               <li><a href="#">Sales <i class="fas fa-money-bill-wave"></i></a></li>
+                               <li><a href="#">Members <i class="fas fa-users"></i></a></li>
+                               <li><a href="#">Settings <i class="fas fa-cog"></i></a></li>
+                               <li><a href="#">Logout <i class="fas fa-power-off"></i></a></li>
+                               <li><a href="#">Login <i class="fas"></i></a></li>
+                               <li><a href="#">Signup <i class="fas"></i></a></li>
+                           </ul>
+                       </div>
+                    </div>
+               </div>
+                <div class="col-lg-10 removePadding">
+                    <div class="main-product">
+                         <div class="products-header"><i class="fa fa-cubes"></i>Category</i></div>
+                         <div class="products-items-container">
+                               <div class="products-items-header">
+                                   <ul>
+                                       <li class="product-item-Delete"><b>(2)</b></b>Selected items <i class="fa fa-trash" id="productItemDelete"><span>Delete</span></i></li>
+                                       <li class="addNewProduct"><a href="#"><i class="fa fa-plus"></i>New Category</a></li>
+                                   </ul>
+                               </div>
+                               <div class="sold-products-table">
+                                <div class="table-responsive">
+                                   <table class="table table-striped table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th><input type="checkbox" value="all"></th>
+                                               <th>Category</th>
+                                               <th>Category ID</th>
+                                               <th>Featured</th>
+                                               <th>Action</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr class="table-parent">
+                                               <form action="" method="post" class="productTableForm">
+                                                   <td><li class="data"><input type="checkbox" name="" value="id"></li></td>
+                                                   <td>
+                                                       <ul>
+                                                           <li><a href="#"><img src="images/crash-nitro-fueld.jpg" alt="crash-nitro-fueld"></a></li>
+                                                           <li>Crash Bandicoot</li>
+                                                       </ul>
+                                                   </td>
+                                                   <td><li class="data">1</li></td>
+                                                   <td><li class="data"><i class="fa fa-check text-success"></i></li></td>
+                                                   <td><li class="data">
+                                                            <a href="#" class="btn btn-success table-btn">Edit</a>
+                                                            <a href="#" class="btn btn-danger table-btn">Delete</a>
+                                                       </li>
+                                                    </td>
+                                               </form>
+                                           </tr>
+                                          
+                                       </tbody>
+                                   </table>
+                                </div>
+                           </div>
+                         </div>
+                    </div>
+                </div>
+             </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="footer">Buy-hub all rights reserved &copy; 2020</div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

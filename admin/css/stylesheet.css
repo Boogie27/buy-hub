@@ -435,7 +435,7 @@ ul.sales-amount li.saleAmount{
     text-decoration: none;
 }
 .order-activity-container #order-activity-image{
-    padding-right: 50px;
+    padding-right: 20px;
 }
 .order-activity-container #order-activity-image img{
     width: 40px;
@@ -473,17 +473,16 @@ ul.sales-amount li.saleAmount{
     cursor: pointer;
 }
 .order-activity-drop-down ul li a{
-    width: 100%;
     font-size: 80%;
     color: rgb(111, 110, 110);
     text-decoration: none;
     padding: 3px 10px;
-    display: block;
+    display: inline-block;
+    font-weight: 300;
 }
 .order-activity-drop-down ul li{
     width: 100%;
     margin: 5px 0px;
-    
 }
 .order-activity-drop-down ul li a i{
     margin-right: 10px;
@@ -491,6 +490,9 @@ ul.sales-amount li.saleAmount{
 .order-activity-drop-down ul li a:hover{
    color: rgb(8, 232, 180);
    background-color: #f1f1f1;
+}
+.order-activity-drop-down ul li:hover{
+    background-color: #f1f1f1;
 }
 .order-activity-drop-down ul li a:hover .fa-info{
  border: 1px solid rgb(8, 232, 180);
@@ -574,14 +576,14 @@ ul.sales-amount li.saleAmount{
 .products-container{
     padding: 0px 15px;
 }
-.main-product{
+.main-product, .main-container{
     background-color: #f9f9f9;
     border-radius: 6px 6px 0px 0px;
     height: 100%;
     padding: 20px;
     width: 100%;
 }
-.products-header i.fa-folder{
+.products-header i.fa-folder, .main-container-header i{
     padding: 10px;
     color: #fff;
     border-radius: 4px;
@@ -592,19 +594,19 @@ ul.sales-amount li.saleAmount{
 .main-product .table-responsive .table{
     margin-bottom: 70px;
 }
-.products-items-container{
+.products-items-container, .main-items-container{
     margin-top: 20px;
 }
-.products-items-header{
+.products-items-header, .main-items-container-header{
     padding: 20px;
     border-radius: 3px 3px 0px 0px;
     background-color: #fff;
 }
-.products-items-header ul li{
+.products-items-header ul li, .main-items-container-header ul li{
     display: inline-block;
     position: relative;
 }
-.products-items-header ul li.addNewProduct{
+.products-items-header ul li.addNewProduct, .main-items-container-header  ul li.addNewProduct{
     float: right;
     font-size: 85%;
     background-color: rgb(4, 188, 169);
@@ -615,20 +617,20 @@ ul.sales-amount li.saleAmount{
     position: relative;
     top: 4px;
 }
-.products-items-header ul li.addNewProduct a{
+.products-items-header ul li.addNewProduct a , .main-items-container-header ul li.addNewProduct a{
     color: #fff;
     text-decoration: none;
 }
-.products-items-header ul li.addNewProduct i{
+.products-items-header ul li.addNewProduct i, .main-items-container-header ul li.addNewProduct i{
     font-size: 85%;
     margin-right: 5px;
 }
-.products-items-header ul li.product-item-Delete{
+.products-items-header ul li.product-item-Delete, .main-items-container-header ul li.product-item-Delete{
     font-weight: 400;
     color: #555;
     font-size: 85%;
 }
-.products-items-header ul li.product-item-Delete i{
+.products-items-header ul li.product-item-Delete i, .main-items-container-header ul li.product-item-Delete i{
     padding: 10px;
     font-size: 130%;
     border-radius: 4px;
@@ -638,7 +640,7 @@ ul.sales-amount li.saleAmount{
     border-radius: 50%;
     transition: all 0.2s ease;
 }
-.products-items-header ul li.product-item-Delete i span{
+.products-items-header ul li.product-item-Delete i span, .main-items-container-header ul li.product-item-Delete i span{
     position: absolute;
     padding: 7px 15px;
     border-radius: 4px;
@@ -651,7 +653,7 @@ ul.sales-amount li.saleAmount{
     left: -19px;
     display: none;
 }
-.products-items-header ul li.product-item-Delete i span::after{
+.products-items-header ul li.product-item-Delete i span::after, .main-items-container-header ul li.product-item-Delete i span::after{
     content: "";
     position: absolute;
     top: 25px;
@@ -659,7 +661,7 @@ ul.sales-amount li.saleAmount{
     border: 8px solid transparent;
     border-top-color: rgb(91, 90, 90);
 }
-.products-items-header ul li.product-item-Delete i:hover{
+.products-items-header ul li.product-item-Delete i:hover, .main-items-container-header ul li.product-item-Delete i:hover{
     background-color: #f1f1f1;
 }
 .table-option{
@@ -699,6 +701,7 @@ ul.product-dropDown li a{
     display: block;
     padding: 3px 10px;
     width: 100%;
+    font-weight: 300;
 }
  
 ul.product-dropDown li a:hover{
@@ -726,7 +729,27 @@ ul.product-dropDown li a i.t{
     width: 300px;
 }
 
-
+/* =========================================================== */
+/*                 BRAND PAGE                                  */
+/* =========================================================== */
+.main-container-header i{
+    background-image: linear-gradient(to left, rgb(57, 6, 57), purple);
+    box-shadow: 0px 0px 2px 2px rgba(242, 98, 206, 0.3);
+}
+a.brand-name{
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+}
+li.data{
+    position: relative;
+}
+a.table-btn{
+    position: relative;
+    top: -10px;
+    margin-right: 20px;
+}
 
 
 
