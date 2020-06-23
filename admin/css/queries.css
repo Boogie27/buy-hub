@@ -158,6 +158,11 @@
 
 /* responsiveness from 486px to 575px */
 @media only screen and (max-width: 575px){
+    /* navigation */
+    .nav-container .logo{
+      color: #fff;
+      font-weight: bold;
+    }
  /* main content */
  .main-content-section, .removePadding{
     padding: 0px;

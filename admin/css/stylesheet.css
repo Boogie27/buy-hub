@@ -48,6 +48,10 @@ a{
 .mobile-nav-content{
     display: none;
 }
+.nav-container .logo{
+    color: #fff;
+    font-weight: bold;
+  }
 .nav-container input{
     width: 80%;
 }
@@ -583,7 +587,7 @@ ul.sales-amount li.saleAmount{
     padding: 20px;
     width: 100%;
 }
-.products-header i.fa-folder, .main-container-header i{
+.products-header i, .main-container-header i{
     padding: 10px;
     color: #fff;
     border-radius: 4px;
@@ -610,7 +614,7 @@ ul.sales-amount li.saleAmount{
     float: right;
     font-size: 85%;
     background-color: rgb(4, 188, 169);
-    padding: 5px 20px;
+    padding: 5px 20px 9px 20px;
     border-radius: 3px;
     box-shadow: 0px 0px 2px 2px rgb(117, 222, 234);
     cursor: pointer;
@@ -732,7 +736,7 @@ ul.product-dropDown li a i.t{
 /* =========================================================== */
 /*                 BRAND PAGE                                  */
 /* =========================================================== */
-.main-container-header i{
+.main-container-header i.fa-cube{
     background-image: linear-gradient(to left, rgb(57, 6, 57), purple);
     box-shadow: 0px 0px 2px 2px rgba(242, 98, 206, 0.3);
 }
@@ -750,8 +754,21 @@ a.table-btn{
     top: -10px;
     margin-right: 20px;
 }
-
-
+/* ============================================================= */
+/*                CATEGORY PAGE                                  */
+/* ============================================================= */
+.products-header i.fa-cubes{
+    background-image: linear-gradient(to left, blue, rgb(47, 47, 142));
+    box-shadow: 0px 0px 2px 2px rgba(100, 98, 242, 0.3);
+}
+a.main-anchor{
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+.categoryPage .table-parent{
+   background-color: #ccc;
+}
 
 
 
