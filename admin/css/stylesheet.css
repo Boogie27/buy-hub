@@ -580,6 +580,9 @@ ul.sales-amount li.saleAmount{
 .products-container{
     padding: 0px 15px;
 }
+.products-header{
+    font-weight: 600;
+}
 .main-product, .main-container{
     background-color: #f9f9f9;
     border-radius: 6px 6px 0px 0px;
@@ -740,6 +743,9 @@ ul.product-dropDown li a i.t{
     background-image: linear-gradient(to left, rgb(57, 6, 57), purple);
     box-shadow: 0px 0px 2px 2px rgba(242, 98, 206, 0.3);
 }
+.main-container-header{
+    font-weight: 600;
+}
 a.brand-name{
     color: #333;
     text-decoration: none;
@@ -769,21 +775,146 @@ a.main-anchor{
 .categoryPage .table-parent{
    background-color: #ccc;
 }
+a.main-anchor.user img{
+    border-radius: 50%;
+}
+.user{
+    position: relative
+}
+.user i.fa-circle{
+   font-size: 60%;
+   position: absolute;
+   left: 28px;
+   top: 20px;
+   border: 2px solid #f1f1f1;
+   border-radius: 50%;
+}
+/* ================================================================ */
+/*                  ADMIN PAGE                                      */
+/* ================================================================ */
+#admin i.fa-users{
+    background-image: linear-gradient(to left,green, rgb(70, 172, 70));
+    box-shadow: 0px 0px 2px 2px rgba(98, 242, 151, 0.3);
+}
 
+#hash{
+    color: rgb(135, 133, 133);
+}
 
+/* ================================================================ */
+/*                  USER PAGE                                      */
+/* ================================================================ */
+#user i.fa-user{
+    background-image: linear-gradient(to left,pink, rgb(172, 70, 148));
+    box-shadow: 0px 0px 2px 2px rgb(235, 179, 189);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========================================================= */
+/*              PROFILE PAGE                                */
+/* ========================================================= */
+.profile-image{
+   position: relative;
+   display: inline-block;
+   float: left;
+   margin-right: 50px;
+}
+.profile-banner{
+    display: none;
+}
+.profile-container{
+    width: 100%;
+    overflow: hidden;
+}
+.profile-container .profile-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile-container .profile-image i.fa-pen{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 120%;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.profile-container ul.user-profile{
+    padding-top: 80px;
+}
+.profile-container ul.user-profile li{
+    color: #333;
+    font-weight: 600;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+ul.user-profile li.third{
+   font-size: 70%;
+   text-transform: none;
+}
+.profile-container ul.user-profile li.second{
+    font-weight: 400;
+    font-size: 60%;
+    color: rgb(135, 135, 135);
+}
+.profile-details{
+    margin: 30px 0px;
+}
+.profile-details-header{
+    font-weight: 600;
+    font-size: 120%;
+    background-color: #fff;
+    padding: 20px;
+}
+ul.details{
+    margin-top: 20px;
+}
+ul.details li{
+  padding: 5px 20px 5px 30px;
+  font-size: 90%;
+  color: #555;
+}
+ul.details li span{
+    font-size: 90%;
+  }
+.user-order-activity{
+    margin-top: 50px;
+}
+.user-order-activity-header{
+    font-weight: 600;
+}
+.profile-order-container{
+    padding: 0px;
+}
+.profile-order{
+    padding: 0px;
+}
+.profile-order-container .order-activity-container{
+    padding: 0px;
+}
+.profile-order-container .main-profile{
+    padding: 0px;
+}
+#order-activity-cont ul{
+    padding: 3px 0px;
+}
+.main-profile .order-activity-container{
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 10px 10px 20px 20px;
+}
+.main-profile #profile-activity-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 0px;
+    margin-right: 3px;
+    padding: 2px;
+    background-color: #ccc;
+}
+.main-profile ul.order-user li{
+    color: #555;
+}
 
 
 

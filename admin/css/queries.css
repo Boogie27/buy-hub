@@ -209,6 +209,59 @@
     padding: 3px 10px;
     top: 7px;
 }
+/* profile page */
+.main-container{
+    padding: 10px;
+}
+.main-container-header{
+    z-index: 90;
+    position: absolute;
+    color: #fff;
+}
+.profile-image{
+    position: relative;
+    display: inline-block;
+    float: none;
+    margin-right: 0px;
+    text-align: center;
+    z-index: 90;
+ }
+ .profile-image-cont{
+     text-align: center;
+ }
+ .profile-container .profile-image img{
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+    margin-top: 50px;
+}
+.profile-container .profile-image i.fa-pen{
+    border: 3px solid #fff;
+    bottom: 10px;
+}
+.profile-banner{
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    z-index: 10;
+    top: 0px;
+    height: 200px;
+    display: block;
+    border-top: 1px solid rgb(70, 70, 70);
+    border: 1px solid #333;
+}
+.profile-banner img{
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -o-filter: blur(3px);
+}
+.profile-container ul.user-profile{
+    padding: 0px 0px 0px 15px;
+    margin-top: 10px;
+}
+
 
 
     /* end */
@@ -245,6 +298,20 @@
 .main-items-container-header ul li.addNewProduct{
     top: -65px;
     right: -20px;
+}
+/* profile page */
+.profile-container .profile-image img{
+    width: 180px;
+    height: 180px;
+}
+.profile-banner{
+    height: 180px;
+}
+.profile-container .profile-image i.fa-pen{
+    bottom: 0px;
+}
+.order-activity-drop-down i.fa-ellipsis-v{
+    right: -8px;
 }
 
     /* end */
