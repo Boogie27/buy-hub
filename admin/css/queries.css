@@ -210,6 +210,9 @@
     top: 7px;
 }
 /* profile page */
+#profile{
+    background-color: #dad8d8;
+}
 .main-container{
     padding: 10px;
 }
@@ -242,13 +245,15 @@
 .profile-banner{
     position: absolute;
     background-color: #333;
-    width: 100%;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 10px;
     z-index: 10;
     top: 0px;
     height: 200px;
     display: block;
     border-top: 1px solid rgb(70, 70, 70);
-    border: 1px solid #333;
+    border-radius: 5px 5px 0px 0px;
 }
 .profile-banner img{
     width: 100%;

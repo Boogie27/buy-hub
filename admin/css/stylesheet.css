@@ -219,7 +219,7 @@ a{
 /*                   MAIN SECTION                                     */
 /* ================================================================= */
 .main-content{
-    background-color: rgb(240, 240, 240);
+    background-color: #c6c6c6;
     border-radius: 6px 6px 0px 0px;
     height: 100%;
     padding: 20px;
