@@ -210,9 +210,6 @@
     top: 7px;
 }
 /* profile page */
-#profile{
-    background-color: #dad8d8;
-}
 .main-container{
     padding: 10px;
 }
@@ -236,7 +233,7 @@
     width: 250px;
     height: 250px;
     border: 3px solid #fff;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .profile-container .profile-image i.fa-pen{
     border: 3px solid #fff;
@@ -245,12 +242,12 @@
 .profile-banner{
     position: absolute;
     background-color: #333;
-    width: 94%;
-    margin-left: 3%;
-    margin-top: 10px;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 6px;
     z-index: 10;
     top: 0px;
-    height: 200px;
+    height: 250px;
     display: block;
     border-top: 1px solid rgb(70, 70, 70);
     border-radius: 5px 5px 0px 0px;

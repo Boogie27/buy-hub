@@ -219,7 +219,7 @@ a{
 /*                   MAIN SECTION                                     */
 /* ================================================================= */
 .main-content{
-    background-color: #c6c6c6;
+    background-color: #f9f9f9;
     border-radius: 6px 6px 0px 0px;
     height: 100%;
     padding: 20px;
@@ -377,10 +377,10 @@ ul.sale-info li.sale-name{
     font-size: 90%;
     font-weight: 600;
 }
-ul.sale-info li i.fa-star{
+ul li i.fa-star{
     color: #bbb;
 }
-ul.sale-info li i.fa-star.rate{
+ ul li i.fa-star.rate{
     color: orange;
 }
 ul.sales-amount{
@@ -825,6 +825,9 @@ a.main-anchor.user img{
     width: 100%;
     overflow: hidden;
 }
+.profile-order-container .profile-order{
+    border: 1px solid #f1f1f1;
+}
 .profile-container .profile-image img{
     width: 200px;
     height: 200px;
@@ -866,6 +869,7 @@ ul.user-profile li.third{
     font-size: 120%;
     background-color: #fff;
     padding: 20px;
+    border: 1px solid #f1f1f1;
 }
 ul.details{
     margin-top: 20px;
@@ -903,6 +907,7 @@ ul.details li span{
     background-color: #fff;
     margin-bottom: 30px;
     padding: 10px 10px 20px 20px;
+    border: 1px solid #f1f1f1;
 }
 .main-profile #profile-activity-image img{
     width: 40px;
@@ -915,7 +920,94 @@ ul.details li span{
 .main-profile ul.order-user li{
     color: #555;
 }
-
+#profile-activity-image .header-items{
+    margin: 0px 0px 5px 0px;
+    font-weight: 600;
+    font-size: 90%;
+    color: #555;
+}
+/* ======================================================== */
+/*                  ORDER DETAIL PAGE                       */
+/* ======================================================== */
+#order-detail{
+    margin-top: 30px;
+}
+.order-detail-container .row{
+    padding: 15px;
+}
+.order-details-header{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    margin-top: 50px;
+    font-weight: 600;
+    position: relative;
+}
+.order-details-header form button{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border: none;
+    background-color: #fff;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+.order-details-header form button:focus{
+    outline: none;
+}
+.order-details-header form button:hover{
+    background-color: #f1f1f1;
+}
+.order-details-header form button i{
+    color: rgb(211, 9, 9);
+    font-size: 120%;
+}
+.order-details-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+}
+#order-detail img{
+    width: 200px;
+    height: 220px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+#order-detail-info{
+    padding: 0px;
+}
+#order-detail-info ul li{
+    font-size: 90%;
+    color: #555;
+    margin: 5px 0px;
+}
+form.orderDetailDelete button{
+    background-color: rgb(60, 203, 225);
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 3px 0px 5px 0px;
+    box-shadow: 0px 0px 2px 2px rgba(56, 187, 178, 0.3);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+form.orderDetailDelete button:hover{
+    background-color: rgb(29, 102, 113);
+}
+form.orderDetailDelete button:focus{
+     outline: none;
+}
+.order-activity-container{
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 40px 15px;
+}
+.order-detail-info{
+    margin-bottom: 50px;
+}
 
 
 
