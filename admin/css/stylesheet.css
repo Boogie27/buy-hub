@@ -218,6 +218,9 @@ a{
 /* ==================================================================*/
 /*                   MAIN SECTION                                     */
 /* ================================================================= */
+.removePadding{
+    overflow: hidden;
+}
 .main-content{
     background-color: #f9f9f9;
     border-radius: 6px 6px 0px 0px;
@@ -968,9 +971,14 @@ ul.details li span{
     border-radius: 50%;
     border: 1px solid #f1f1f1;
 }
+.order-image-container{
+    width: 70%;
+    height: 200px;
+    margin-left: 15%;
+}
 #order-detail img{
-    width: 200px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 4px;
@@ -984,7 +992,7 @@ ul.details li span{
     margin: 5px 0px;
 }
 form.orderDetailDelete button{
-    background-color: rgb(60, 203, 225);
+    background-color: rgb(17, 132, 105);
     border: none;
     width: 100%;
     color: #fff;
@@ -1002,16 +1010,84 @@ form.orderDetailDelete button:focus{
 }
 .order-activity-container{
     background-color: #fff;
-    border: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e3e0e0;
     padding: 40px 15px;
 }
 .order-detail-info{
     margin-bottom: 50px;
 }
+.order-total{
+    overflow: hidden;
+}
+.order-total li{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 50px;
+    text-align: center;
+    color: orange;
+    font-size: 140%;
+    float: right;
+}
 
-
-
-
+/* ========================================================== */
+/*              PRODUCT DETAIL PAGE                           */
+/* ========================================================== */
+#product-detail .product-detail-cont{
+    margin-top: 50px;
+}
+.frame-container{
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin-left: 15%;
+    height: 500px;
+}
+.frame{
+    display: flex;
+    position: absolute;
+    /* transform: translate(-200px); */
+    background-color: #fff;
+    height: 500px;
+}
+.frame .frame-item{
+   width: 500px;
+   height: 500px;
+   margin-right: 50px;
+   padding: 0px 0px;
+}
+.frame .frame-item img{
+   width: 100%;
+   height: 100%;
+ }
+ .direction{
+    width: 100%;
+    height: 0px;
+    position: relative;
+    top: 240px;
+ }
+ .direction i{
+     position: absolute;
+     padding: 10px;
+     font-size: 200%;
+     border: 1px solid #fff;
+     cursor: pointer;
+     transition: all 0.5s ease;
+     color: #fff;
+     background-color: #333;
+ }
+ .direction i:hover{
+    background-color: rgb(17, 132, 105);
+    color: #fff;
+}
+ .direction .fa-angle-left{
+    border-radius: 5px 0px 0px 5px;
+    left: 0px;
+ }
+ .direction .fa-angle-right{
+    right: 0px;
+    border-radius: 0px 5px 5px 0px;
+ }
 
 
 /* ========================================================= */

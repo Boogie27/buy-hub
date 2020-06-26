@@ -16,7 +16,11 @@
 .order-activity-drop-down ul{
     width: 25%;
 }
-    
+ /*order-detail page  */
+ .order-image-container{
+    width: 100%;
+    margin-left: 0%;
+}
 
 /* end */
 } 
@@ -85,6 +89,22 @@
         overflow-x: auto;
         white-space: nowrap;
     }
+ /*order-detail page  */
+ .order-image-container{
+    height: 180px;
+}
+#order-detail-info ul li{
+    font-size: 80%;
+}
+#order-detail ul li span{
+    font-size: 100%;
+}
+
+
+
+
+
+
     /* end */
 }
 
@@ -149,6 +169,11 @@
 .table-option{
     max-width: 30%;
 }
+/* order-detail page */
+.order-detail-info ul.order-user li{
+    margin: 5px 0px;
+}
+
 
  
 
@@ -177,7 +202,25 @@
 .order-activity-drop-down ul{
     width: 35%;
 }
-
+/* order-detail page */
+.order-image-container{
+    width: 80%;
+    margin-left: 10%;
+}
+.orderDetailDelete button{
+    margin-top: 10px;
+}
+.right{
+    text-align: right;
+    padding: 0px 10px 0px 10px;
+}
+#order-detail{
+    margin-top: 70px;
+    background-color: #fff;
+}
+.order-total{
+   margin-top: 50px;
+}
 
     /* end */
     } 
@@ -263,8 +306,17 @@
     padding: 0px 0px 0px 15px;
     margin-top: 10px;
 }
-
-
+/* order-detail page */
+.order-image-container{
+    height: 150px;
+}
+#order-detail-info ul li{
+    margin: 0px;
+}
+.order-total li{
+   width: 100%;
+   padding: 10px;
+ }
 
     /* end */
 }
@@ -284,7 +336,16 @@
 .order-activity-drop-down ul{
     width: 70%;
 }  
-
+/* order-detail page */
+.order-image-container{
+    height: 130px;
+}
+#order-detail-info ul{
+    padding-top: 10px;
+}
+#order-detail-info ul li{
+    font-size: 70%;
+}
 
 
     /* end */
