@@ -307,22 +307,21 @@ a{
     width: 100%;
     height: 270px;
 }
-.bars li{
-    display: inline-block;
+.bar-chart .bars li{
     display: table-cell;
     width: 100px;
     height: 230px;
     position: relative;
     text-align: center;
 }
-.bars .bar{
+.bar-chart ul.bars .bar{
     background-image: linear-gradient(to top, rgb(237, 103, 103), rgb(228, 35, 35));
     width: 90%;
     position: absolute;
     bottom: -20px;
     border-radius: 2px 2px 0px 0px;
 }
-.bars li span{
+.bar-chart .bars li span{
     font-weight: 600;
     display: table-cell;
     width: 100%;
@@ -332,7 +331,7 @@ a{
     position: absolute;
     bottom: -40px;
 }
-.bars .bar::before{
+.bar-chart ul.bars .bar::before{
     content: attr(data-percentage)"%";
     font-size: 60%;
     color: #fff;
@@ -409,7 +408,7 @@ ul.sales-amount li.saleAmount{
 .order-activity-header{
     font-weight: 600;
     font-size: 100%;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #ccc;
     padding: 10px 20px 10px 20px;
 }
 .order-activity-header span{
@@ -1043,6 +1042,9 @@ form.orderDetailDelete button:focus{
     margin-left: 15%;
     height: 500px;
 }
+.products-header, .profile-details-header, .description-body{
+    box-shadow: 0px 0px 2px 2px rgba(240, 238, 238, 0.7);
+}
 .frame{
     display: flex;
     position: absolute;
@@ -1088,6 +1090,182 @@ form.orderDetailDelete button:focus{
     right: 0px;
     border-radius: 0px 5px 5px 0px;
  }
+
+ /* ================================================= */
+/*                DETAIL MIRROR                       */
+/* ================================================== */
+.detail-mirror{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px rgba(240, 238, 238, 0.7);
+}
+.mirror-items{
+    width: 100%;
+    /* margin-left: 15%; */
+    border-radius: 4px;
+    border: 3px solid transparent;
+}
+.mirror-items img{
+    width: 100%;
+    height: 100%;
+}
+.mirror-items.clicked{
+    border: 3px solid rgb(193, 3, 3);
+}
+.detail-details{
+    margin-top: 20px;
+    color: #333;
+}
+.detail-details b{
+   font-weight: 600;
+}
+.detail-details span{
+    font-size: 85%;
+}
+.deatail-mirror-header{
+    font-size: 150%;
+    margin-bottom: 30px;
+}
+ .deatail-mirror-header h2{
+    color: #555;
+    margin-right: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+.deatail-mirror-header ul li i.fa-star{
+  font-size: 80%;
+}
+ul.detail-details .productQty{
+   margin-top: 30px;
+}
+ul.detail-details .productQty b{
+    background-color:  #333;
+    padding: 5px 20px;
+ }
+ ul.detail-details .productQty span{
+    background-color:  orange;
+    color: #333;
+    font-weight: bold;
+    padding: 7px 20px 6px 20px;
+ }
+ .detail-description-container{
+     margin: 20px 0px;
+ }
+.description-header{
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-bottom: 1px solid #bbb;
+    color: #333;
+    font-weight: 600;
+    font-size: 120%;
+    padding: 10px;
+    margin-top: 20px;
+} 
+.description-body{
+    background-color: #fff;
+    padding: 20px;
+    color: #555;
+    font-size: 90%;
+}
+/* ===================================================== */
+/*             PRODUCT REVIEWS                           */
+/* ===================================================== */
+.product-review-header, .product-ratings-header{
+    font-size: 90%;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+.description-header span{
+    float: right;
+    cursor: pointer;
+}
+.rating-banner{
+    margin: 20px 0px;
+}
+.rating-banner ul{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+ul li.banner-header{
+    font-size: 180%;
+}
+.rating-banner ul li{
+    color: #ccc;
+    margin: 10px 0px;
+}
+/* =====================================================*/
+/*             DETAILS RATINGS BAR CHART                */
+/* ==================================================== */
+.ratings-bars{
+    margin: 50px 0px;
+}
+ul.product-detail-star-ratings{
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+}
+ul.product-detail-star-ratings li{
+    position: relative;
+    background-color: #ccc;
+    width: 68%;
+    height: 8px;
+    margin: 20px;
+    margin-left: 31%;
+    border-radius: 5px;
+}
+ul.product-detail-star-ratings li .bar{
+   background-color: orange;
+   height: 8px;
+   width: 0%;
+   border-radius: 5px;
+}
+ul.product-detail-star-ratings li span{
+   position: absolute;
+   top: -5px;
+   left: -80px;
+   font-size: 90%;
+}
+ul.product-detail-star-ratings li span i{
+   margin: 0px 5px;
+ }
+
+
+
+.product-review-body ul{
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding: 10px 0px;
+}
+.verified{
+    float: right;
+    font-size: 80%;
+    padding-top: 5px;
+}
+.verified i{
+    margin-right: 5px;
+}
+.product-review-body ul li{
+    margin: 5px 0px;
+    overflow: hidden;
+}
+.product-review-body ul li span{
+    color: rgb(149, 148, 148);
+}
+.review-title{
+    color: #333;
+    font-weight: 600;
+}
+.review-paragraph{
+    font-size: 80%;
+    color: #555;
+}
+
+
 
 
 /* ========================================================= */

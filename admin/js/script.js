@@ -4,39 +4,66 @@ $(document).ready(function(){
 // ================================================
 // RESPONSIVE BAR CHART
 // ================================================
-var barChar = $(".bar-chart .bars .bar");
-   
-if(barChar.length > 0){
-     var percentageArray = [];
-     for(var i = 0; i < barChar.length; i++){
-          percentageArray.push(0);
-     }
+var barCharts = $(".bars");
+var bars = $(".bar");
 
-     var percent = [];
-     for(var i = 0; i < barChar.length; i++){
-        percent.push(0);
-    } 
+   if(barCharts.length > 0){
+       $.each(barCharts, function(index, current){
+            var bar = $(current).find(bars);
+            var dataDirection = $(this).attr("data-direction");
 
-    $.each(barChar, function(index, current){
-        var percentage = parseInt($(this).attr("data-percentage"));
-            $(this).animate({
-               height: percentage+"%"
-            }, 2000); 
+           var barsArray = []; 
+           for(var i = 0; i < bar.length; i++){
+               barsArray.push(0);
+           }
+  
+
+          $.each(bar, function(barIndex, barCurrent){
+                var barRates = parseInt($(this).attr("data-percentage"));
+                if(dataDirection === "height"){
+                    $(this).animate({
+                        height: barRates+"%"
+                    }, 2000)
+                }
+                if(dataDirection === "width"){
+                    $(this).animate({
+                        width: barRates+"%"
+                    }, 2000)
+                }
+          })
+       });
+   }
+// if(barChar.length > 0){
+//      var percentageArray = [];
+//      for(var i = 0; i < barChar.length; i++){
+//           percentageArray.push(0);
+//      }
+
+//      var percent = [];
+//      for(var i = 0; i < barChar.length; i++){
+//         percent.push(0);
+//     } 
+
+//     $.each(barChar, function(index, current){
+//         var percentage = parseInt($(this).attr("data-percentage"));
+//             $(this).animate({
+//                height: percentage+"%"
+//             }, 2000); 
 
             
-            setInterval(addPercentage, 17);
-            function addPercentage(){
-                    if(percent[index] < percentage){
-                        percentageArray[index]++;
-                        percent[index]++;
-                        $(current).attr("data-percentage", percentageArray[index])
-                    }else{
-                        clearInterval(addPercentage)
-                    }
-            }  
-    });
+//             setInterval(addPercentage, 17);
+//             function addPercentage(){
+//                     if(percent[index] < percentage){
+//                         percentageArray[index]++;
+//                         percent[index]++;
+//                         $(current).attr("data-percentage", percentageArray[index])
+//                     }else{
+//                         clearInterval(addPercentage)
+//                     }
+//             }  
+//     });
 
-}
+// }
 
 
 
