@@ -156,10 +156,10 @@ ul.detail-details .productQty span{
 /* responsiveness from 577px to 767px */
 @media only screen and (max-width: 767px){
     /* navigation */
-    .navigation{
+    .navigation, .navigationStick{
         margin-bottom: 20px;
     }
-    .navigation .profileImage img{ 
+    .navigation .profileImage img, .navigationStick .profileImage img{ 
         width: 40px;
         height: 40px;
      }

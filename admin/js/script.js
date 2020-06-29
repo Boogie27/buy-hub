@@ -104,6 +104,68 @@ if($(window).width() < 992){
     })
 }
 
+
+
+// ============================================================
+// FUNCTION THAT STICKS SIDE  NAVIGATION ONSCROLL
+// ============================================================
+function stickSidenav(){
+    var sideNavigation = $("#stickySideNavigation");
+    var startPosition = $("#sideNavStickPosition");
+   
+        var top = $(startPosition).offset().top;
+        var element = $(window).scrollTop();
+
+            if(element >= top){
+                $(sideNavigation).addClass("stick");
+            }else{
+                $(sideNavigation).removeClass("stick");
+            }
+    }
+
+    stickSidenav();
+
+    if(($(window).width() + 17) > 991){
+        $(window).scroll(function(e){
+          stickSidenav();
+        });
+    }
+
+
+
+
+// ============================================================
+// FUNCTION THAT STICKS TOP  NAVIGATION ONSCROLL
+// ============================================================
+    var stickyTopNavigation = $("#stickyTopNavigation");
+    var stickTopNavPosition = $("#stickyTopNavPosition");
+
+     function stickyTopNav(){
+        var top = $(stickTopNavPosition).offset().top;
+        var element = $(window).scrollTop();
+        var x = parseInt($(stickTopNavPosition).attr("data-top"));
+            if(element >= (top + x) ){
+                $(stickyTopNavigation).addClass("topNavSticky");
+            }else{
+                $(stickyTopNavigation).removeClass("topNavSticky");
+            }
+     }
+
+     stickyTopNav();
+    
+    if(($(window).width() + 17) < 991){
+       
+       $(window).scroll(function(e){
+          stickyTopNav();
+          console.log($(window).width())
+       });
+    }
+
+
+
+
+
+
   // ======================================================================
 // FUNCTION THAT DISPLAYS THE DELETE BARNER ON PRODUCT DELETE PAGE
 // =======================================================================

@@ -34,6 +34,25 @@ i.fa-pen{
     z-index: 90;
     transition: all 0.5s ease;
 }
+/* sticky side navigation navigation */
+#stickySideNavigation.stick{
+   position: fixed;
+   width: 100%;
+   top: 0px;
+}
+/* top navigation sticky */
+#stickyTopNavigation{
+    display: none;
+}
+#stickyTopNavigation.topNavSticky{
+   position: fixed;
+   width: 100%;
+   z-index: 10;
+   display: block;
+}
+#stickyTopNavigation .nav-container{
+    padding: 10px 10px 20px 10px;
+}
 .light-skin.light-skin-active{
     position: fixed;
     width: 100%;
@@ -45,7 +64,7 @@ i.fa-pen{
 }
 /* end  */
 
-.navigation{
+.navigation .navigationStick{
     background-color: #333; 
 }
 .mobile-nav-content{
@@ -105,7 +124,7 @@ i.fa-pen{
     background-color: #333;
     overflow: hidden;
 }
-.navigation .profile{
+.navigation .profile, .navigationStick .profile{
     float: right;
 }
 #sideNavOpenButton{
@@ -115,7 +134,7 @@ i.fa-pen{
     display: inline-block;
     margin-left: 30px;
 }
-.navigation li{
+.navigation li, .navigationStick li{
     position: relative;
 }
 .sizeBar-nav i{
@@ -126,7 +145,7 @@ i.fa-pen{
     color: #fff;
     font-size: 140%;
 }
-.navigation .profileImage img{ 
+.navigation .profileImage img, .navigationStick .profileImage img{ 
    width: 50px;
    height: 50px;
    border-radius: 50%;
@@ -169,7 +188,7 @@ i.fa-pen{
     margin: 0px;
 }
 /* ***********side bar section********* */
-.side-navigation{
+.side-navigation, .sideBar-nav-container{
     padding: 20px 0px;
     background-color: #333;
     height: 100%;
