@@ -72,75 +72,82 @@ var bars = $(".bar");
 // FUNCTION THAT OPENS AND CLOSES THE SIDE NAVIGATION
 // ============================================================
 
-if($(window).width() < 992){
-    var profileNav = $(".profile");
-    var sideNavOpenButton = $("#sideNavOpenButton");
-    var sideNavCloseButton = $("#sideNavCloseButton");
-    var darkSkin = $(".dark-skin");
-
-    function sideNavAction(left, visibility){
-            var sideNavigation = $("#sideNavigation");
-                $(sideNavigation).css({
-                    visibility: visibility,
-                    left: left
-                });
-              $(darkSkin).toggleClass("dark-skin-active");
-    }
-
+ function sideBarNavigation(){
+    if($(window).width() < 992){
+        var profileNav = $(".profile");
+        var sideNavOpenButton = $("#sideNavOpenButton");
+        var sideNavCloseButton = $("#sideNavCloseButton");
+        var darkSkin = $(".dark-skin");
     
-    $.each(profileNav, function(index, current){
-        var buttonOpen =  $(this).find("#sideNavOpenButton");
-        buttonOpen.click(function(){
-            sideNavAction("0px", "visible");
+        function sideNavAction(left, visibility){
+                var sideNavigation = $("#sideNavigation");
+                    $(sideNavigation).css({
+                        visibility: visibility,
+                        left: left
+                    });
+                  $(darkSkin).toggleClass("dark-skin-active");
+        }
+    
+        
+        $.each(profileNav, function(index, current){
+            var buttonOpen =  $(this).find("#sideNavOpenButton");
+            buttonOpen.click(function(){
+                sideNavAction("0px", "visible");
+            });
         });
-    });
-
-    $(sideNavCloseButton).click(function(e){
-        sideNavAction("-350px", "hidden",);
-    });
-
-    $(darkSkin).click(function(){
-        sideNavAction("-350px", "hidden",);
-    })
-}
+    
+        $(sideNavCloseButton).click(function(e){
+            sideNavAction("-350px", "hidden",);
+        });
+    
+        $(darkSkin).click(function(){
+            sideNavAction("-350px", "hidden",);
+        })
+    }
+ }
+ sideBarNavigation();
 
 
 
 // ============================================================
 // FUNCTION THAT STICKS SIDE  NAVIGATION ONSCROLL
 // ============================================================
-function stickSidenav(){
-    var sideNavigation = $("#stickySideNavigation");
-    var startPosition = $("#sideNavStickPosition");
-   
-        var top = $(startPosition).offset().top;
-        var element = $(window).scrollTop();
-
-            if(element >= top){
-                $(sideNavigation).addClass("stick");
-            }else{
-                $(sideNavigation).removeClass("stick");
+ function stickSideNavigation(){
+    function stickSidenav(){
+        var sideNavigation = $("#stickySideNavigation");
+        var startPosition = $("#sideNavStickyPosition");
+    
+          if(startPosition.length > 0){ 
+            var top = $(startPosition).offset().top;
+                var element = $(window).scrollTop();
+    
+                    if(element >= top){
+                        $(sideNavigation).addClass("stick");
+                    }else{
+                        $(sideNavigation).removeClass("stick");
+                    }
             }
-    }
-
-    stickSidenav();
-
-    if(($(window).width() + 17) > 991){
-        $(window).scroll(function(e){
-          stickSidenav();
-        });
-    }
-
-
-
+        }
+    
+    
+        if(($(window).width() + 17) > 991){
+            stickSidenav();
+            $(window).scroll(function(e){
+              stickSidenav();
+            });
+        } 
+ }
+ stickSideNavigation();
 
 // ============================================================
 // FUNCTION THAT STICKS TOP  NAVIGATION ONSCROLL
 // ============================================================
+  function topNavigation(){
     var stickyTopNavigation = $("#stickyTopNavigation");
     var stickTopNavPosition = $("#stickyTopNavPosition");
 
      function stickyTopNav(){
+         if(stickTopNavPosition.length > 0){
         var top = $(stickTopNavPosition).offset().top;
         var element = $(window).scrollTop();
         var x = parseInt($(stickTopNavPosition).attr("data-top"));
@@ -149,19 +156,21 @@ function stickSidenav(){
             }else{
                 $(stickyTopNavigation).removeClass("topNavSticky");
             }
-     }
+       }
+    }
 
-     stickyTopNav();
-    
+   
     if(($(window).width() + 17) < 991){
-       
+        stickyTopNav();
        $(window).scroll(function(e){
-          stickyTopNav();
-          console.log($(window).width())
+         stickyTopNav();
+         
        });
     }
 
-
+   
+  }
+  topNavigation();
 
 
 
@@ -169,59 +178,65 @@ function stickSidenav(){
   // ======================================================================
 // FUNCTION THAT DISPLAYS THE DELETE BARNER ON PRODUCT DELETE PAGE
 // =======================================================================
-  var prodcutItemDelete = $("#productItemDelete");
-  var showSpan = $("#productItemDelete span");
-
-      var screenWidth = $(window).width();
-      if(screenWidth >= 1125){
-            if(prodcutItemDelete.length > 0){
-                $(prodcutItemDelete).mouseover(function(){
-                    $(showSpan).show();
-                });
-                $(prodcutItemDelete).mouseout(function(){
-                $(showSpan).hide();
-                });
-           }
-      }
-      
+   function deleteBanner(){
+    var prodcutItemDelete = $("#productItemDelete");
+    var showSpan = $("#productItemDelete span");
+  
+        var screenWidth = $(window).width();
+        if(screenWidth >= 1125){
+              if(prodcutItemDelete.length > 0){
+                  $(prodcutItemDelete).mouseover(function(){
+                      $(showSpan).show();
+                  });
+                  $(prodcutItemDelete).mouseout(function(){
+                  $(showSpan).hide();
+                  });
+             }
+        }
+   }
+   deleteBanner();   
 
 
 // ======================================================================
 // FUNCTION THAT DISPLAYS THE DROP DOWNS
 // =======================================================================       
-     var itemContainer =  {
-             parent: $(".parent"),
-             productPropDown: $(".childDropDown"),
-             actionButton: $(".actionButton")
-         }
-         $.each(itemContainer.parent, function(index, current){
-              var optionButton = $(this).find(itemContainer.actionButton);
-              var dropdown = $(this).find(itemContainer.productPropDown);
-              function action(button, dropdown){
-                 var container = $(button).parent().find(dropdown);
+   
+       
+
+       function dropdown(){
+            var itemContainer =  {
+                parent: $(".parent"),
+                productPropDown: $(".childDropDown"),
+                actionButton: $(".actionButton")
+            }
+
+            $.each(itemContainer.parent, function(index, current){
+                var optionButton = $(this).find(itemContainer.actionButton);
+                var dropdown = $(this).find(itemContainer.productPropDown);
+                function action(button, dropdown){
+                    var container = $(button).parent().find(dropdown);
                     if(container){
                         $(container).show();
                     }
             }
-             $(optionButton).mouseover(function(e){
-                   action($(this),itemContainer.productPropDown );
-             });
+                $(optionButton).mouseover(function(e){
+                    action($(this),itemContainer.productPropDown );
+                });
 
-             $(optionButton).mouseout(function(e){
-                  $(itemContainer.productPropDown).hide();
+                $(optionButton).mouseout(function(e){
+                    $(itemContainer.productPropDown).hide();
             });
 
-             $(dropdown).mouseover(function(e){
-                   $(this).show();
-             });
+                $(dropdown).mouseover(function(e){
+                    $(this).show();
+                });
 
-             $(dropdown).mouseout(function(e){
+                $(dropdown).mouseout(function(e){
                 $(this).hide();
             });
-             
-            
-         })
-
+            });
+       }
+       dropdown();
 
 
 

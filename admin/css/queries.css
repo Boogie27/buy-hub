@@ -330,6 +330,10 @@ ul.product-detail-star-ratings li span{
     
 /* responsiveness from 399px to 485px */
 @media only screen and (max-width: 485px){
+    /* navigation */
+    #stickyTopNavigation.topNavSticky{
+        z-index: 50;
+     }
    /* main content */
    .profileImage span{
        display: none;
@@ -360,7 +364,7 @@ ul.product-detail-star-ratings li span{
     padding: 10px;
 }
 .main-container-header{
-    z-index: 90;
+    z-index: 40;
     position: absolute;
     color: #fff;
 }
@@ -370,7 +374,7 @@ ul.product-detail-star-ratings li span{
     float: none;
     margin-right: 0px;
     text-align: center;
-    z-index: 90;
+    z-index: 40;
  }
  .profile-image-cont{
      text-align: center;

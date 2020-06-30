@@ -16,7 +16,58 @@
     
 
     <div class="dark-skin"></div>
-    <div class="light-skin"></div>
+   
+
+
+     <!--STICKY NAVIAGTION SECTION -->
+  <section class="navigation" id="stickyTopNavigation">
+        <div class="nav-container">
+             <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                      <div class="logo">buy Hub</div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-9 col-12 mobile-nav-content">
+                      <div class="profile">
+                          <ul class="ul-nav">
+                              <li class="profileImage">
+                                  <img src="profile-image/profile-image.png" alt="profile-image"> 
+                                  <i class="fa fa-circle"></i>
+                                  <span>Logan Usher</span>
+                              </li>
+                              <li><a href="#"><i class="far fa-envelope"></i> <i class="fa fa-circle message"></i></a></li>
+                              <li><a href="#"><i class="far fa-bell"></i> <i class="fa fa-circle notification"></i></a></li>
+                              <li><i class="fas fa-power-off"></i></li>
+                              <li><i class="fas fa-bars" id="sideNavOpenButton"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-5 col-md-4 navSearch">
+                       <form action="" method="post">
+                           <input type="text" name="" value="" class="form-control" placeholder="Search...">
+                           <button type="" name=""><i class="fa fa-search"></i></button>
+                       </form>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-9 col-12 desktop-nav-content">
+                      <div class="profile">
+                          <ul class="ul-nav">
+                              <li class="profileImage">
+                                  <img src="profile-image/profile-image.png" alt="profile-image"> 
+                                  <i class="fa fa-circle"></i>
+                                  <span>Logan Usher</span>
+                              </li>
+                              <li><a href="#"><i class="far fa-envelope"></i> <i class="fa fa-circle message"></i></a></li>
+                              <li><a href="#"><i class="far fa-bell"></i> <i class="fa fa-circle notification"></i></a></li>
+                              <li><i class="fas fa-power-off"></i></li>
+                              <li><i class="fas fa-bars" id="sideNavOpenButton"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+             </div>
+        </div>
+  </section>
+
+
+
 
 
 
@@ -70,38 +121,40 @@
 
 
     <!-- DASH BOARD SECTION-->
-    <section class="dash-board">
+    <section class="products-container cont" id="stickyTopNavPosition" data-top="50">
             <div class="row">
                 <!-- side bar section -->
-                <div class="col-lg-2 col-md-4 col-sm-5 col-10 navi" id="sideNavigation">
-                     <div class="side-navigation">
-                        <div class="side-nav-header">
-                            <img src="profile-image/profile-image.png" alt="profile-image">
-                            <ul class="sizeBar-nav">
-                                <li>Logan Usher</li>
-                                <li class="position">sales manager</li>
-                                <i class="fas fa-times" id="sideNavCloseButton"></i>
-                            </ul>
+                <div class="col-lg-2 col-md-4 navi" id="sideNavigation">
+                        <div class="sideBar-nav-container" id="stickySideNavigation">
+                            <div class="side-navigation">
+                                <div class="side-nav-header">
+                                    <img src="profile-image/profile-image.png" alt="profile-image">
+                                    <ul class="sizeBar-nav">
+                                        <li>Logan Usher</li>
+                                        <li class="position">sales manager</li>
+                                        <i class="fas fa-times" id="sideNavCloseButton"></i>
+                                    </ul>
+                                </div>
+                                <div class="side-nav-content">
+                                    <ul>
+                                        <li><a href="index.html">Dash Board <i class="fas fa-home"></i></a></li>
+                                        <li><a href="products.html">Produts <i class="far fa-folder"></i></a></li>
+                                        <li><a href="brand.html">Brands <i class="fa fa-cube"></i></a></li>
+                                        <li><a href="category.html">Categories <i class="fa fa-cubes"></i></a></li>
+                                        <li><a href="orders.html">Orders <i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href="users.html">Users <i class="far fa-user"></i></a></li>
+                                        <li><a href="#">Sales <i class="fas fa-money-bill-wave"></i></a></li>
+                                        <li><a href="admin.html">Admin <i class="fas fa-users"></i></a></li>
+                                        <li><a href="#">Settings <i class="fas fa-cog"></i></a></li>
+                                        <li><a href="#">Logout <i class="fas fa-power-off"></i></a></li>
+                                        <li><a href="#">Login <i class="fas"></i></a></li>
+                                        <li><a href="#">Signup <i class="fas"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="side-nav-content">
-                            <ul>
-                                <li><a href="index.html">Dash Board <i class="fas fa-home"></i></a></li>
-                                <li><a href="products.html">Produts <i class="far fa-folder"></i></a></li>
-                                <li><a href="brand.html">Brands <i class="fa fa-cube"></i></a></li>
-                                <li><a href="category.html">Categories <i class="fa fa-cubes"></i></a></li>
-                                <li><a href="orders.html">Orders <i class="fas fa-shopping-cart"></i></a></li>
-                                <li><a href="users.html">Users <i class="far fa-user"></i></a></li>
-                                <li><a href="#">Sales <i class="fas fa-money-bill-wave"></i></a></li>
-                                <li><a href="admin.html">Admin <i class="fas fa-users"></i></a></li>
-                                <li><a href="#">Settings <i class="fas fa-cog"></i></a></li>
-                                <li><a href="#">Logout <i class="fas fa-power-off"></i></a></li>
-                                <li><a href="#">Login <i class="fa"></i></a></li>
-                                <li><a href="#">Signup <i class="fa fa-sign-in"></i></a></li>
-                            </ul>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-lg-10 col-md-12 main-content-section">
+                   </div>
+                <div class="col-lg-10  removePadding" id="sideNavStickyPosition">
                     <div class="main-content">
                          <div class="main-content-home-logo"><i class="fas fa-shopping-cart"></i>Order</div>
                           <div class="main-content-container">
