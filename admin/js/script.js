@@ -9,28 +9,66 @@ var bars = $(".bar");
 
    if(barCharts.length > 0){
        $.each(barCharts, function(index, current){
-            var bar = $(current).find(bars);
+            var bar = $(this).find(bars);
             var dataDirection = $(this).attr("data-direction");
+            var barTop = $(this).offset().top;
+            var dataTop = parseInt($(this).attr("data-top"));
+            var barChartTop = barTop + dataTop;
 
-           var barsArray = []; 
-           for(var i = 0; i < bar.length; i++){
-               barsArray.push(0);
-           }
+
+            
+
+
+
+                function myBarFunction(bars){
+                    $.each(bars, function(barIndex, barCurrent){
+                        var barRates = parseInt($(this).attr("data-percentage"));
+
+                        if(dataDirection === "height"){
+                            $(this).animate({
+                                height: barRates+"%"
+                            }, 2000);
+                        }
+                        
+                        if(dataDirection === "width"){
+                            $(this).animate({
+                                width: barRates+"%"
+                            }, 2000);
+                        }
+                  });
+                }
+            
+
+            var staticWindowHeight = $(window).height();
+            
+              
+            if((barChartTop - 677) <= staticWindowHeight){
+                myBarFunction($(bar));
+            }
+
+            $(window).scroll(function(e){
+                var windowHeight = $(this).height();
+                var scroll = $(this).scrollTop();
+                if((barChartTop - scroll) <= windowHeight){
+                    myBarFunction($(bar));
+                }
+            });
+
+
+            // var barsArray = []; 
+            // for(var i = 0; i < bar.length; i++){
+            //     barsArray.push(0);
+            // }
+            // console.log(barsArray)
+           
+            // function rate(){
+                
+            // }
+            // rate();
+          
   
 
-          $.each(bar, function(barIndex, barCurrent){
-                var barRates = parseInt($(this).attr("data-percentage"));
-                if(dataDirection === "height"){
-                    $(this).animate({
-                        height: barRates+"%"
-                    }, 2000)
-                }
-                if(dataDirection === "width"){
-                    $(this).animate({
-                        width: barRates+"%"
-                    }, 2000)
-                }
-          })
+        
        });
    }
 // if(barChar.length > 0){

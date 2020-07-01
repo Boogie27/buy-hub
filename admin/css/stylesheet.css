@@ -37,7 +37,7 @@ i.fa-pen{
 /* sticky side navigation navigation */
 #stickySideNavigation.stick{
    position: fixed;
-   width: 100%;
+   width: 15%;
    top: 0px;
 }
 /* top navigation sticky */
