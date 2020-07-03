@@ -16,10 +16,7 @@ var bars = $(".bar");
             var barChartTop = barTop + dataTop;
 
 
-            
-
-
-
+            // function rises the bars when scrolled into view
                 function myBarFunction(bars){
                     $.each(bars, function(barIndex, barCurrent){
                         var barRates = parseInt($(this).attr("data-percentage"));
@@ -35,73 +32,23 @@ var bars = $(".bar");
                                 width: barRates+"%"
                             }, 2000);
                         }
+
+                    
                   });
                 }
             
-
-            var staticWindowHeight = $(window).height();
-            
-              
-            if((barChartTop - 677) <= staticWindowHeight){
-                myBarFunction($(bar));
-            }
-
+            // scroll funciton
             $(window).scroll(function(e){
                 var windowHeight = $(this).height();
                 var scroll = $(this).scrollTop();
                 if((barChartTop - scroll) <= windowHeight){
                     myBarFunction($(bar));
                 }
-            });
-
-
-            // var barsArray = []; 
-            // for(var i = 0; i < bar.length; i++){
-            //     barsArray.push(0);
-            // }
-            // console.log(barsArray)
-           
-            // function rate(){
-                
-            // }
-            // rate();
-          
-  
-
-        
+            });      
        });
+
    }
-// if(barChar.length > 0){
-//      var percentageArray = [];
-//      for(var i = 0; i < barChar.length; i++){
-//           percentageArray.push(0);
-//      }
 
-//      var percent = [];
-//      for(var i = 0; i < barChar.length; i++){
-//         percent.push(0);
-//     } 
-
-//     $.each(barChar, function(index, current){
-//         var percentage = parseInt($(this).attr("data-percentage"));
-//             $(this).animate({
-//                height: percentage+"%"
-//             }, 2000); 
-
-            
-//             setInterval(addPercentage, 17);
-//             function addPercentage(){
-//                     if(percent[index] < percentage){
-//                         percentageArray[index]++;
-//                         percent[index]++;
-//                         $(current).attr("data-percentage", percentageArray[index])
-//                     }else{
-//                         clearInterval(addPercentage)
-//                     }
-//             }  
-//     });
-
-// }
 
 
 
@@ -277,13 +224,83 @@ var bars = $(".bar");
        dropdown();
 
 
+// ==================================================================
+// function thate slides detail image
+// ===================================================================
+var frameContainer = $(".swipperFrame");
+var frame = $(".swipper");
+var direction = $(".direction");
+
+// mirror container
+var mirrorContainer = $(".mirrorContainer");
+
+
+function slider(swipperFrame, SwipperWidth, speed, count){ 
+    $(swipperFrame).css({
+       transition: "all "+speed+"s ease",
+       transform: "translate("+(-SwipperWidth * count)+"px)"
+    });
+}  
 
 
 
+function slide(Fcontainer, frames, direct){
+   $.each(Fcontainer, function (index, current){
+      var swipperFrames = $(this).find(frames);
+      var direction = $(this).find(direct);
+      var frameWidth = $($(swipperFrames).children()[0]).width();
+      var marginRight = parseInt($($(swipperFrames).children()[0]).css("margin-right"));
+      var width = marginRight + frameWidth;
+      var button = $(direction).children();
+      
 
+          button.click(function(e){
+              if($(e.target).hasClass("fa-angle-right")){
+                    if(countArray[index] <= swipperFrames.length){
+                        countArray[index]++;
+                        slider(swipperFrames, width, 0.7, countArray[index]);
+                    }
+              }else if($(e.target).hasClass("fa-angle-left")){
+                  if(countArray[index] > 0){
+                    countArray[index]--;
+                    slider(swipperFrames, width, 0.7, countArray[index]);
+                  }
+              }
+          });
+   });
+}
 
+// check if frame container exists
+if(frameContainer.length > 0){
+    var countArray = [];
+    for(var i = 0; i < frameContainer.length; i++){
+        countArray.push(0);
+    }
+    
+    slide(frameContainer, frame, direction);
+}
 
+// check if mirror items exists
+if(mirrorContainer.length > 0){
+    var mirrorChildren = $(mirrorContainer).children().find(".mirror");
+    var frameWidth = $($(frame).children()[0]).width();
+    var marginRight = parseInt($($(frame).children()[0]).css("margin-right"));
+    var width = marginRight + frameWidth;
 
+         $($(mirrorContainer).children().find(".mirror")[0]).addClass("clicked");
+        $.each(mirrorChildren, function(index, current){
+            $(this).click(function(e){
+                for(var i = 0; i < mirrorChildren.length; i++){
+                    $(mirrorChildren).removeClass("clicked"); 
+                }
+                $(this).addClass("clicked");
+                if($(this).hasClass("clicked")){
+                    countArray[0] = index;
+                    slider(frame, width, 0.7, index);
+                }
+            });
+        });
+}
 
 
 

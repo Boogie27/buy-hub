@@ -23,12 +23,14 @@
 }
 /* product detail page */
 .frame-container{
-    width: 100%;
-    margin-left: 0%;
-    height: 550px;
+    width: 80%;
+    margin-left: 10%;
 }
 .frame .frame-item{
-    height: 550px;
+    width: 387px;
+ }
+ .frame .frame-item img{
+    padding: 30px;
  }
  .rating-banner{
     padding: 0px;
@@ -42,6 +44,13 @@ ul.product-detail-star-ratings li{
 }
 ul.product-detail-star-ratings li span{
     left: -75px;
+ }
+ /* profile detail page */
+.frame .frame-item{
+    width: 355px;
+}
+.frame .frame-item img{
+    padding: 10px;
  }
 
 /* end */
@@ -149,7 +158,13 @@ ul.detail-details .productQty span{
 /* responsiveness from 776px to 870px */
 @media only screen and (max-width: 870px){
    
-
+/* profile detail page */
+.frame .frame-item{
+    width: 330px;
+}
+.frame .frame-item img{
+    padding: 20px;
+ }
     /* end */
     } 
     
@@ -269,7 +284,10 @@ ul.product-detail-star-ratings li span{
       font-weight: bold;
     }
  /* main content */
- .main-content-section, .removePadding{
+.main-content{
+    padding: 20px 7px;
+}
+ .removePadding{
     padding: 0px;
 }
  .main-content-thumb{
@@ -440,8 +458,11 @@ ul.product-detail-star-ratings li{
     margin-bottom: 60px;
 }
 .frame .frame-item{
-    width: 400px;
+    width: 370px;
     height: 500px;
+ }
+ .frame .frame-item img{
+    padding: 30px;
  }
  .detail-mirror{
     width: 100%;
@@ -476,6 +497,14 @@ ul.product-detail-star-ratings li{
 #order-detail-info ul li{
     font-size: 70%;
 }
+/* profile detail page */
+.frame .frame-item{
+    width: 330px;
+}
+.frame .frame-item img{
+    padding: 30px;
+ }
+ 
 
 
     /* end */
@@ -506,6 +535,13 @@ ul.product-detail-star-ratings li{
 .order-activity-drop-down i.fa-ellipsis-v{
     right: -8px;
 }
+/* profile detail page */
+.frame .frame-item{
+    width: 280px;
+}
+.frame .frame-item img{
+    padding: 30px;
+ }
 
     /* end */
 }

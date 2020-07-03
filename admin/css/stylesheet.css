@@ -243,6 +243,9 @@ i.fa-pen{
 .removePadding{
     overflow: hidden;
 }
+.top-sales, .order-activity, .sold-product-container{
+    box-shadow: 0px 0px 2px 2px rgba(240, 238, 238, 0.7);
+}
 .main-content{
     background-color: #f9f9f9;
     border-radius: 6px 6px 0px 0px;
@@ -480,7 +483,7 @@ ul.sales-amount li.saleAmount{
 .order-activity-drop-down{
     position: relative;
     width: 100%;
-    z-index: 100;
+    z-index: 5;
     height: 1px;
 }
 .order-activity-drop-down i.fa-ellipsis-v{
@@ -1073,10 +1076,9 @@ form.orderDetailDelete button:focus{
     /* transform: translate(-200px); */
     background-color: #fff;
     height: 500px;
-    border: 1px solid #ccc;
 }
 .frame .frame-item{
-   width: 500px;
+   width: 422px;
    height: 500px;
    margin-right: 50px;
    padding: 0px 0px;
@@ -1125,6 +1127,7 @@ form.orderDetailDelete button:focus{
 }
 .mirror-items{
     width: 100%;
+    height: 110px;
     /* margin-left: 15%; */
     border-radius: 4px;
     border: 3px solid transparent;
@@ -1132,6 +1135,7 @@ form.orderDetailDelete button:focus{
 .mirror-items img{
     width: 100%;
     height: 100%;
+    border-bottom: 1px solid #ccc;
 }
 .mirror-items.clicked{
     border: 3px solid rgb(193, 3, 3);
