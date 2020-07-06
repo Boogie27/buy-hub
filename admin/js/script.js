@@ -87,7 +87,7 @@ var bars = $(".bar");
     
         $(darkSkin).click(function(){
             sideNavAction("-350px", "hidden",);
-        })
+        });
     }
  }
  sideBarNavigation();
@@ -115,7 +115,7 @@ var bars = $(".bar");
         }
     
     
-        if(($(window).width() + 17) > 991){
+        if(($(window).width()) > 991){
             stickSidenav();
             $(window).scroll(function(e){
               stickSidenav();
@@ -123,6 +123,20 @@ var bars = $(".bar");
         } 
  }
  stickSideNavigation();
+
+// ========================================================================================
+//  function that removes dark background and removes all asynchronous forms and popups
+// ========================================================================================
+function hideDarkTheme(){
+     $(".dark-skin").removeClass("dark-skin-active");
+     $("#modalBox").slideUp(100);
+
+}
+
+$(".dark-skin").click(function(){
+    hideDarkTheme();
+});
+
 
 // ============================================================
 // FUNCTION THAT STICKS TOP  NAVIGATION ONSCROLL
@@ -145,7 +159,7 @@ var bars = $(".bar");
     }
 
    
-    if(($(window).width() + 17) < 991){
+    if(($(window).width()) < 991){
         stickyTopNav();
        $(window).scroll(function(e){
          stickyTopNav();
@@ -244,41 +258,55 @@ function slider(swipperFrame, SwipperWidth, speed, count){
 
 
 
-function slide(Fcontainer, frames, direct){
-   $.each(Fcontainer, function (index, current){
-      var swipperFrames = $(this).find(frames);
-      var direction = $(this).find(direct);
+function mySlideFunction(Fcontainer, frames, direct){
+      var swipperFrames = $(Fcontainer).find(frames);
+      var direction = $(Fcontainer).find(direct);
       var frameWidth = $($(swipperFrames).children()[0]).width();
       var marginRight = parseInt($($(swipperFrames).children()[0]).css("margin-right"));
       var width = marginRight + frameWidth;
       var button = $(direction).children();
-      
 
+     
           button.click(function(e){
               if($(e.target).hasClass("fa-angle-right")){
-                    if(countArray[index] <= swipperFrames.length){
-                        countArray[index]++;
-                        slider(swipperFrames, width, 0.7, countArray[index]);
+                    if(counter <= swipperFrames.length){
+                        counter++;
+                        if(bordered($(mirrorContainer),  counter)){
+                            slider(swipperFrames, width, 0.7, counter);
+                        }
+                       
                     }
               }else if($(e.target).hasClass("fa-angle-left")){
-                  if(countArray[index] > 0){
-                    countArray[index]--;
-                    slider(swipperFrames, width, 0.7, countArray[index]);
+                  if(counter > 0){
+                    counter--;
+                    if(bordered($(mirrorContainer),  counter)){
+                        slider(swipperFrames, width, 0.7, counter);
+                    }
                   }
               }
           });
-   });
 }
 
 // check if frame container exists
 if(frameContainer.length > 0){
-    var countArray = [];
-    for(var i = 0; i < frameContainer.length; i++){
-        countArray.push(0);
+    var counter = 0;
+    mySlideFunction(frameContainer, frame, direction);
+    if(($(window).width()) <= 870 ){
+         screenOnTouch(frame);     // function that swipes the detail image on touch swipe
     }
-    
-    slide(frameContainer, frame, direction);
 }
+
+// function that high lights the mirror
+    function bordered(parentDiv, index){
+        var frameImages = $(parentDiv).children().find(".mirror");
+        for(var i = 0; i < frameImages.length; i++){
+            $(frameImages[i]).removeClass("clicked"); 
+        }
+        if($(frameImages[index]).addClass("clicked")){
+            return true;
+        }
+       return false;
+    }
 
 // check if mirror items exists
 if(mirrorContainer.length > 0){
@@ -289,18 +317,101 @@ if(mirrorContainer.length > 0){
 
          $($(mirrorContainer).children().find(".mirror")[0]).addClass("clicked");
         $.each(mirrorChildren, function(index, current){
+            // function that slides detail image when mirror image is clicked
             $(this).click(function(e){
-                for(var i = 0; i < mirrorChildren.length; i++){
-                    $(mirrorChildren).removeClass("clicked"); 
-                }
-                $(this).addClass("clicked");
-                if($(this).hasClass("clicked")){
-                    countArray[0] = index;
-                    slider(frame, width, 0.7, index);
-                }
+               if(bordered($(mirrorContainer), index)){
+                   counter = index;
+                   slider(frame, width, 0.7, counter);
+               }
             });
         });
 }
+
+
+  function screenOnTouch(itemFrame){   
+                itemFrame.on("touchstart", touchStart);
+                itemFrame.on("touchmove", touchMove);
+                itemFrame.on("touchend", touchEnd);
+  }
+  
+
+  var startPosition = 0;
+  var change = 0;
+  var currentPosition = 0;
+
+  function touchStart(event){
+       isDown = true;
+       var  startX = event.touches[0].clientX;
+       var framePosition = $(this).css("transform");
+       startPosition = startX;
+       if(framePosition !== "none"){
+         change =  parseInt(framePosition.split(",")[4])
+       }
+  }
+
+ function touchMove(event){
+     if(isDown){
+        var startX = event.touches[0].clientX;
+        var movingPositon = startX - startPosition;
+         currentPosition = movingPositon + change;
+        
+        $(this).css({
+           transition: "none",
+           transform: "translate("+(movingPositon + change )+"px)"
+        });
+     }
+  }
+
+
+
+
+function touchEnd(){
+    var frameCont = $(this).children();
+   var childWidth = $(frameCont[0]).width();
+   var marginRight = parseInt($(frameCont[0]).css("margin-right"));
+   var width = marginRight + childWidth;
+   
+   var actualPosition = $(this).width() + currentPosition;
+
+   if(actualPosition < $(frameCont[0]).width()){
+            animate($(this), width, frameCont.length - 1);
+   }
+   
+   if(actualPosition > $(this).width()){
+        animate($(this), width, 0);
+   }
+}
+
+
+function animate(frame, width, count){
+        $(frame).css({
+            transition: "all 0.7s ease",
+            transform: "translate("+(-width * count )+"px)"
+        });
+}
+
+
+
+// ===========================================================
+//       FUNCTION THAT OPENS AND CLOSES THE MODAL BOX
+// ===========================================================
+
+var openModalBox = $(".openModal-box");
+function modalBox(){
+    $(openModalBox).click(function(e){
+        e.preventDefault();
+           $("#modalBox").slideDown(300);
+           $(".dark-skin").addClass("dark-skin-active");
+    });
+
+    // close the modal box
+    $(".modalBoxCancle").click(function(e){
+        e.preventDefault();
+        hideDarkTheme();
+    });
+}
+modalBox();
+
 
 
 

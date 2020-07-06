@@ -20,7 +20,51 @@ a{
 i.fa-pen{
     cursor: pointer;
   }
-
+/* =============================================================== */
+/*                  MODAL BOX                                     */
+/* ============================================================= */
+.modal-dropdown{
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 110;
+    margin-left: 30%;
+    margin-top: 7%;
+    display: none;
+}
+.actionBtn{
+    margin-top: 20px;
+}
+.actionBtn button{
+  width: 50%;
+  background-color: orange;
+  border: none;
+  padding: 5px 10px 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.actionBtn button:hover{
+    background-color: rgb(202, 125, 8);
+  }
+.actionBtn a{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px 8px 10px;
+    border-radius: 3px;
+  }
+  .modal-header h3{
+      color: #555;
+      font-size: 130%;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+  }
+  .modal-header span i{
+      cursor: pointer;
+      color: #555;
+  }
 /* ================================================================= */
 /*                         NAVIGATION SECTION                        */
 /* ================================================================ */
@@ -29,7 +73,7 @@ i.fa-pen{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgb(87, 86, 86);
+    background-color: rgb(16, 16, 16);
     opacity: 0.5;
     z-index: 90;
     transition: all 0.5s ease;
@@ -787,6 +831,34 @@ a.table-btn{
     top: -10px;
     margin-right: 20px;
 }
+.addBrand {
+    float: right;
+}
+.brandInput{
+    width: 300px;
+    padding: 7px; 
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    font-size: 90%;
+}
+.brandInput:focus{
+  outline: none;
+}
+.addBrand button{
+    font-size: 85%;
+    background-color: rgb(4, 188, 169);
+    padding: 5px 20px 9px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 2px rgb(117, 222, 234);
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+}
+.addBrand i.fa-plus{
+    margin-right: 5px;
+}
 /* ============================================================= */
 /*                CATEGORY PAGE                                  */
 /* ============================================================= */
@@ -1127,7 +1199,7 @@ form.orderDetailDelete button:focus{
 }
 .mirror-items{
     width: 100%;
-    height: 110px;
+    height: 130px;
     /* margin-left: 15%; */
     border-radius: 4px;
     border: 3px solid transparent;
@@ -1139,10 +1211,14 @@ form.orderDetailDelete button:focus{
 }
 .mirror-items.clicked{
     border: 3px solid rgb(193, 3, 3);
+    transition: all 0.7s ease;
 }
 .detail-details{
     margin-top: 20px;
     color: #333;
+}
+.detail-mirror .col-12{
+    padding: 0px;
 }
 .detail-details b{
    font-weight: 600;
