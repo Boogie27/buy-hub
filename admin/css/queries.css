@@ -155,7 +155,17 @@ ul.detail-details .productQty span{
     margin-left: 40%;
 }
 
-
+/* signup login page */
+.form .container{
+   max-width: 100%;
+   overflow: hidden;
+}
+.responsive{
+    position: absolute;
+    width: 40%;
+    right: 0px;
+    height: 90vh;
+}
 
     /* end */
 }

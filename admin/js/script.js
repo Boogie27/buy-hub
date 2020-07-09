@@ -415,10 +415,37 @@ modalBox();
 
 
 
+function loginSignForm(){
+    var formContainer = $("#formContainer form");
+    var formbutton = $(".formbutton");
+   
+    for(var i = 0; i < formContainer.length; i++){
+         $(formContainer[i]).hide();
+         $(formbutton[i]).removeClass("inview");
+    }
+    $(formContainer[0]).show();
+    $(formbutton[0]).addClass("inview");
 
 
+    function formInt(type){
+        for(var i = 0; i < formContainer.length; i++){
+            $(formContainer[i]).hide();
+            $(formbutton[i]).removeClass("inview");
+       }
+       $(formContainer[type]).show();
+       $(formbutton[type]).addClass("inview");
+    }
 
 
+    $.each(formbutton,function(index, current){
+        $(current).click(function(e){
+            formInt(index);
+        });
+    });
+
+}
+
+loginSignForm();
 
 
 
