@@ -180,6 +180,10 @@ ul.detail-details .productQty span{
     margin: 0px;
     height: 190px;
 }
+/* product-detail page */
+.frame .frame-item img{
+    border-radius: 4px;
+ }
     /* end */
     } 
     
@@ -245,6 +249,7 @@ ul.detail-details .productQty span{
 .order-detail-info ul.order-user li{
     margin: 5px 0px;
 }
+/* product-detail page */
 .frame-container{
     width: 70%;
     margin-left: 15%;

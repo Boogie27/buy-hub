@@ -271,6 +271,9 @@ i.fa-pen{
 .side-nav-content ul li:hover{
     background-color: red;
  }
+ .side-nav-content ul li.active{
+    background-color: rgb(111, 109, 109);
+}
 .side-nav-content ul li a{
    display: block;
    color: #fff;
@@ -530,10 +533,10 @@ ul.sales-amount li.saleAmount{
     z-index: 5;
     height: 1px;
 }
-.order-activity-drop-down i.fa-ellipsis-v{
+.order-activity-drop-down i.fa-ellipsis-h {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -30px;
+    right: -10px;
 }
 .order-activity-drop-down ul{
     position: absolute;
@@ -1158,6 +1161,7 @@ form.orderDetailDelete button:focus{
 .frame .frame-item img{
    width: 100%;
    height: 100%;
+   border: 1px solid rgb(223, 221, 221);
  }
  .direction{
     width: 100%;
@@ -1383,7 +1387,6 @@ ul.product-detail-star-ratings li span i{
     font-weight: 500;
 }
 .sold-products-table form input.image{
-    width: 100%;
     padding-top: 3px;
     color: red;
 }
@@ -1400,6 +1403,7 @@ ul.product-detail-star-ratings li span i{
     float: left;
     margin: 0.8%;
     padding: 7px;
+    position: relative;
 }
 .editImage-frame .frame-item img{
     width: 100%;
@@ -1408,7 +1412,19 @@ ul.product-detail-star-ratings li span i{
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-
+.editImage-frame button.edit-delete-button{
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+}
+.editImage-frame button.edit-delete-button:focus{
+   outline: none;
+}
+.editImage-frame button.edit-delete-button i.fa-times{
+   color: rgb(211, 5, 5);
+}
 /* ========================================================= */
 /*                    FOOTER                                 */
 /* ========================================================= */
