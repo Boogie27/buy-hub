@@ -155,17 +155,18 @@ ul.detail-details .productQty span{
     margin-left: 40%;
 }
 
-/* signup login page */
+/* login signup page */
+.disappear{
+    display: none;
+}
 .form .container{
-   max-width: 100%;
-   overflow: hidden;
-}
-.responsive{
-    position: absolute;
     width: 40%;
-    right: 0px;
-    height: 90vh;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 5px;
 }
+
+
 
     /* end */
 }
@@ -173,7 +174,10 @@ ul.detail-details .productQty span{
 
 /* responsiveness from 776px to 870px */
 @media only screen and (max-width: 870px){
-   
+/* preloader */
+.preloader{
+    margin-left: 45%;
+}
 /* profile detail page */
 .frame .frame-item{
     width: 330px;
@@ -199,6 +203,11 @@ ul.detail-details .productQty span{
     
 /* responsiveness from 577px to 767px */
 @media only screen and (max-width: 767px){
+    /* preloader */
+    .preloader{
+        margin-left: 43%;
+        margin-top: 170px;
+    }
     /* modal dropdown */
     .modal-dropdown{
         width: 60%;
@@ -328,7 +337,10 @@ ul.product-detail-star-ratings li span{
     margin: 0px;
     height: 190px;
 }
-
+/* login signup page */
+.form .container{
+    width: 50%;
+}
 
     /* end */
 }
@@ -413,6 +425,10 @@ ul.product-detail-star-ratings li span{
     margin: 0px;
     height: 200px;
 }
+/* login signup page */
+.form .container{
+    width: 70%;
+}
 
 
     /* end */
@@ -420,6 +436,10 @@ ul.product-detail-star-ratings li span{
     
 /* responsiveness from 399px to 485px */
 @media only screen and (max-width: 485px){
+    /* preloader */
+.preloader{
+    margin-left: 40%;
+}
 /* modal dropdown */
 .modal-dropdown{
     margin-top: 20%;
@@ -564,6 +584,10 @@ ul.product-detail-star-ratings li{
     height: 250px;
     float: none;
 }
+/* login signup page */
+.form .container{
+    width: 90%;
+}
 
     /* end */
 }
@@ -571,6 +595,10 @@ ul.product-detail-star-ratings li{
 
 /* responsiveness from 319px to 398px */
 @media only screen and (max-width: 398px){
+/* preloader */
+.preloader{
+    margin-left: 36%;
+}
     /* modal dropdown */
 .modal-dropdown{
     width: 96%;
@@ -610,7 +638,13 @@ ul.product-detail-star-ratings li{
     margin: 0px;
     height: 60px;
 }
- 
+ /* login signup page */
+.form .container{
+    width: 95%;
+}
+.form-header h3{
+   font-size: 100%;
+}
 
 
     /* end */

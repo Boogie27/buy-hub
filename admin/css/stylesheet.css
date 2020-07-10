@@ -33,6 +33,7 @@ i.fa-pen{
     margin-left: 30%;
     margin-top: 7%;
     display: none;
+    overflow: scroll;
 }
 .actionBtn{
     margin-top: 20px;
@@ -65,6 +66,74 @@ i.fa-pen{
       cursor: pointer;
       color: #555;
   }
+  /* =============================================================== */
+  /*                PRELOADER                                        */
+  /* ============================================================== */
+  .preloader-dark-skin{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(16, 16, 16);
+    opacity: 0.5;
+    z-index: 50;
+    top: 0px;
+    transition: all 0.5s ease;
+  }
+  .preloader{
+      position: fixed;
+      z-index: 100;
+      background-color: transparent;
+      width: 6%;
+      height: 12%;
+      margin-left: 46%;
+      margin-top: 250px;
+  }
+.preloader .loader{
+     width: 86px;
+     height: 86px;
+     border-radius: 50%;
+     border: 2px solid rgb(235, 79, 79);
+     border-left: 2px solid rgb(45, 223, 247);
+     border-top: 2px solid transparent;
+     position: fixed;
+     -webkit-animation: spin 2s linear infinite; 
+     animation: spin 2s linear infinite;  
+}
+.preloader .loader.second{
+    width: 77px;
+    height: 77px;
+    margin: 4px 5px 6px 5px;
+    border: 2px solid orange;
+    border-right: 2px solid transparent; 
+    border-bottom: 2px solid pink; 
+    -webkit-animation: spin2 2s linear infinite; 
+    animation: spin2 2s linear infinite; 
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+@keyframes spin2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} 
+.preloader .loader.third{
+    width: 68px;
+    height: 68px;
+    margin: 8px 3px 6px 9px;
+    border: 2px solid rgb(15, 242, 15);
+    border-left: 2px solid transparent;
+    border-right: 2px solid rgb(230, 247, 45); 
+
+}
 /* ================================================================= */
 /*                         NAVIGATION SECTION                        */
 /* ================================================================ */
@@ -76,6 +145,7 @@ i.fa-pen{
     background-color: rgb(16, 16, 16);
     opacity: 0.5;
     z-index: 90;
+    top: 0px;
     transition: all 0.5s ease;
 }
 /* sticky side navigation navigation */
@@ -1465,7 +1535,17 @@ body.login-body{
 .form .banner{
    width: 100%;
    height: 90vh;
-   opacity: 0.6;
+   position: relative;
+}
+.banner-font{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.banner-font h1{
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 .form .banner img{
     width: 100%;
@@ -1487,6 +1567,11 @@ body.login-body{
 }
  .form form button{
     color: #fff;
+    background-image: linear-gradient(to top,rgb(246, 55, 55), orange);
+}
+.form form button:focus{
+    color: #fff;
+    outline: none;
 }
 .form form .forgot-password{
     font-size: 90%;

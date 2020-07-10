@@ -1,5 +1,13 @@
 $(document).ready(function(){
+
     
+// ================================================
+// PRELOADER 
+// ================================================
+  setTimeout(function preloader(){
+      $("#preloader").hide();
+  }, 1500);
+
 
 // ================================================
 // RESPONSIVE BAR CHART
@@ -452,3 +460,4 @@ loginSignForm();
 
 // end;
 });
+
