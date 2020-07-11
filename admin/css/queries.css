@@ -202,6 +202,13 @@ ul.detail-details .productQty span{
 .frame .frame-item img{
     border-radius: 4px;
  }
+/* loign signup page */
+.form .row{
+    margin: 0px;
+}
+
+
+
     /* end */
     } 
     
