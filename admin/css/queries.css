@@ -174,6 +174,10 @@ ul.detail-details .productQty span{
 
 /* responsiveness from 776px to 870px */
 @media only screen and (max-width: 870px){
+    /* modal box */
+    .modal-dropdown{
+        overflow: scroll;
+    }
 /* preloader */
 .preloader{
     margin-left: 45%;
@@ -208,6 +212,9 @@ ul.detail-details .productQty span{
         margin-left: 43%;
         margin-top: 170px;
     }
+  .main-page-preloader{
+    margin-top: 300px;
+  }
     /* modal dropdown */
     .modal-dropdown{
         width: 60%;

@@ -33,7 +33,6 @@ i.fa-pen{
     margin-left: 30%;
     margin-top: 7%;
     display: none;
-    overflow: scroll;
 }
 .actionBtn{
     margin-top: 20px;
@@ -1503,6 +1502,9 @@ ul.product-detail-star-ratings li span i{
 body.login-body{
     background-image: linear-gradient(to left, rgb(235, 113, 113), orange);
     background-color: #fff;
+}
+.responsive{
+    overflow: hidden;
 }
 .form-header{
     margin: 30px 0px 0px 0px;
