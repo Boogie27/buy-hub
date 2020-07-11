@@ -162,7 +162,7 @@ ul.detail-details .productQty span{
 .form .container{
     width: 40%;
     margin-top: 50px;
-    padding-bottom: 30px;
+    padding: 0px 0px 30px 0px;
     border-radius: 5px;
 }
 

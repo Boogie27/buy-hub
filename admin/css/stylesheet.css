@@ -1507,7 +1507,7 @@ body.login-body{
     overflow: hidden;
 }
 .form-header{
-    margin: 30px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
     overflow: hidden;
     width: 60%;
     margin-left: 20%;
@@ -1531,7 +1531,7 @@ body.login-body{
 }
 .form .container{
     background-color: #fff;
-    padding: 0px;
+    padding: 0px 30px 0px 0px;
     box-shadow: 2px 2px 7px 5px rgba(160, 113, 113, 0.7);
 }
 .form .banner{
@@ -1553,10 +1553,11 @@ body.login-body{
     width: 100%;
     height: 100%;
  }
- .form form input{
+ .form form input, .form form select{
    border: none;
    border-bottom: 1px solid orange;
    font-size: 90%;
+   height: 30px;
 }
 .form form input:focus{
     color: rgb(149, 149, 149);
@@ -1566,6 +1567,9 @@ body.login-body{
  .form form label{
     font-size: 90%;
     font-weight: 500;
+    margin: 0px;
+} .form form p{
+    font-size: 90%;
 }
  .form form button{
     color: #fff;
