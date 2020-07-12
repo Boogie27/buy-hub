@@ -180,16 +180,18 @@ $(".dark-skin").click(function(){
 
    
     if(($(window).width()) < 991){
-        stickyTopNav();
+       stickyTopNav();
        $(window).scroll(function(e){
          stickyTopNav();
          
        });
+
+      // console.log($(window).height())
     }
 
    
   }
-//   topNavigation();
+   topNavigation();
 
 
 

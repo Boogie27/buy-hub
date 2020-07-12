@@ -262,7 +262,7 @@ ul.detail-details .productQty span{
     }
   /*  main content  */
   .main-content{
-    padding: 20px 0px;
+    padding: 20px 7px;
 }
 .main-content-home-logo i{
     margin-left: 15px;
@@ -372,9 +372,6 @@ ul.product-detail-star-ratings li span{
     font-weight: bold;
 }
  /* main content */
-.main-content{
-    padding: 20px 7px;
-}
  .removePadding{
     padding: 0px;
 }

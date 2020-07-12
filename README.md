@@ -1,3 +1,1 @@
-
-####buy hub
-##E-commerce website
+# This is an e-commerce admin panel
