@@ -162,6 +162,7 @@ i.fa-pen{
    width: 100%;
    z-index: 10;
    display: block;
+   border-bottom: 1px solid rgb(69, 68, 68);
 }
 #stickyTopNavigation .nav-container{
     padding: 10px 10px 20px 10px;
@@ -1197,6 +1198,10 @@ form.orderDetailDelete button:focus{
     font-size: 140%;
     float: right;
 }
+.main-profile i.fa-ellipsis-h{
+    right: 0px;
+    top: -10px;
+}
 
 /* ========================================================== */
 /*              PRODUCT DETAIL PAGE                           */
@@ -1589,7 +1594,7 @@ body.login-body{
 /*                    FOOTER                                 */
 /* ========================================================= */
 .footer{
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     color: #fff;
 }

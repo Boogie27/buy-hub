@@ -9,7 +9,7 @@ var loaderState = false;
       $("#preloader").hide();
       responsiveBars();
       topNavigation();
-  }, 3000);
+  }, 2000);
 
 
  

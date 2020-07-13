@@ -356,6 +356,11 @@ ul.product-detail-star-ratings li span{
     width: 50%;
 }
 
+/* footer  */
+.footer{
+  font-size: 80%;
+}
+
     /* end */
 }
 
@@ -619,6 +624,11 @@ ul.product-detail-star-ratings li{
 .ul-nav li{
     margin-left: 20px;
 }
+/* brand page */
+.addBrand button{
+    font-size: 70%;
+    padding: 9px 10px 10px 10px;
+}
 /* side nav */
   section .navi#sideNavigation{
       max-width: 80%;
@@ -656,6 +666,10 @@ ul.product-detail-star-ratings li{
 .form-header h3{
    font-size: 100%;
 }
+/* footer  */
+.footer{
+    font-size: 60%;
+  }
 
 
     /* end */
@@ -665,17 +679,13 @@ ul.product-detail-star-ratings li{
 @media only screen and (max-width: 320px){
 /* product */
 .products-items-header ul li.addNewProduct{
-    top: -100px;
-    right: -20px;
+    top: 9px;
+    right: -10px;
 }
 .main-items-container-header ul li.addNewProduct{
     top: -65px;
     right: -20px;
 }
-/* brand page */
-.addBrand button{
-    padding: 5px 5px 9px 5px;
-  }
 /* profile page */
 .profile-container .profile-image img{
     width: 180px;
